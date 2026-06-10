@@ -5,6 +5,7 @@ This directory contains public-safe Plato diagrams and screenshots.
 | File | Purpose |
 |---|---|
 | `plato-hero.svg` | README hero and product identity graphic. |
+| `plato-three-planes.svg` | Product model diagram for Inspiration, Control, and Trust planes. |
 | `plato-product-flow.svg` | Product journey from intent to outcome. |
 | `plato-architecture-overview.svg` | Public-safe architecture boundary diagram. |
 | `plato-trust-flow.svg` | Trust and audit evidence flow diagram. |

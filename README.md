@@ -2,27 +2,36 @@
 
 Plato is a task-first intelligent workbench.
 
-It turns a user's goal into a visible task structure, lets the user review and
-confirm the work, executes through a local runtime, and keeps results, file
-changes, and audit evidence inspectable.
+It helps users start from an unclear goal, shape that goal into reviewable
+work, control execution, and inspect evidence afterward.
 
 ![Plato task-first workbench](assets/images/plato-hero.svg)
 
 ## What Plato Is
 
 Most AI tools make the conversation the main object. Plato makes the task the
-main object.
+main object, and organizes the product around three planes:
+
+- Inspiration Plane: understand the user's need, clarify missing context, and
+  shape fuzzy intent into work that can be planned.
+- Control Plane: show the plan, task state, confirmations, running work, and
+  result actions in one action-oriented surface.
+- Trust Plane: keep outcomes, file changes, audit evidence, and diagnostics
+  inspectable after work happens.
 
 ```text
 User intent
+  -> Clarification when needed
   -> Draft TaskTree
   -> Review and confirmation
   -> Local execution
   -> Result, file changes, and audit evidence
 ```
 
-Plato is the user-facing product. TaskWeavn is the local task-agent runtime
-behind it.
+The three planes exist because intelligent work fails in three different ways:
+the system can misunderstand the user, the user can lose control during
+execution, or the result can be hard to trust afterward. Plato treats those as
+separate product responsibilities instead of hiding all of them in chat.
 
 ## Current Public Release
 
@@ -55,17 +64,32 @@ Important status notes:
 
 See [macOS local release usage](docs/usage/macos-local-release.md).
 
-## Product Model
+## Product Planes
+
+![Plato three product planes](assets/images/plato-three-planes.svg)
+
+| Plane | User question | Product role |
+|---|---|---|
+| Inspiration Plane | What am I trying to accomplish, and what does Plato understand? | Turns fuzzy goals into clarified, draftable work. |
+| Control Plane | What work will happen, what is running, and what needs me? | Keeps plan, status, confirmation, and result actions visible. |
+| Trust Plane | What happened, why, and what evidence exists? | Makes results, file changes, and audit evidence inspectable. |
+
+The next product emphasis is the Inspiration Plane. This is where Plato first
+learns what the user actually needs, asks for missing context, and decides
+whether a goal is ready to become a task structure.
+
+## Task-First Loop
 
 ![Plato product flow](assets/images/plato-product-flow.svg)
 
 Plato is designed around a simple loop:
 
 1. State a goal in natural language.
-2. Review the generated task structure before meaningful work starts.
-3. Confirm high-impact actions in context.
-4. Track progress through task states.
-5. Inspect the result, changed files, and audit trail.
+2. Clarify missing context before the goal becomes executable work.
+3. Review the generated task structure before meaningful work starts.
+4. Confirm high-impact actions in context.
+5. Track progress through task states.
+6. Inspect the result, changed files, and audit trail.
 
 Read more:
 

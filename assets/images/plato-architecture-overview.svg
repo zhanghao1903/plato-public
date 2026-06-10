@@ -3,7 +3,7 @@
   <desc id="desc">A diagram showing Plato authoring, publishing, execution, and trust projection boundaries.</desc>
   <rect width="1200" height="520" fill="#fbfaf7"/>
   <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Public architecture overview</text>
-  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">A product-readable map of the TaskWeavn runtime behind Plato.</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">A product-readable map of local authoring, execution, and trust boundaries.</text>
   <g font-family="Inter, Arial, sans-serif">
     <rect x="64" y="132" width="238" height="220" rx="14" fill="#ffffff" stroke="#dce3ee"/>
     <text x="92" y="170" font-size="20" font-weight="700" fill="#182033">Authoring</text>

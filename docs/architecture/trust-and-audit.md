@@ -7,6 +7,16 @@ and where to inspect evidence.
 
 ![Plato trust flow](../../assets/images/plato-trust-flow.svg)
 
+## Product Plane Context
+
+Trust is one of Plato's three product planes:
+
+- Inspiration Plane: clarify what the user needs before work is planned.
+- Control Plane: keep planned and running work visible.
+- Trust Plane: preserve the evidence needed to evaluate what happened.
+
+This document focuses on the Trust Plane and how it connects back to control.
+
 ## Control Plane And Trust Plane
 
 | Surface | Role |

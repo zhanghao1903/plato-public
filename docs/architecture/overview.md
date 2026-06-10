@@ -2,7 +2,7 @@
 
 This page describes Plato at a public architecture level.
 
-Plato is the product surface. TaskWeavn is the local runtime behind it.
+Plato is the product surface. A local runtime handles task execution behind it.
 
 ![Plato architecture overview](../../assets/images/plato-architecture-overview.svg)
 

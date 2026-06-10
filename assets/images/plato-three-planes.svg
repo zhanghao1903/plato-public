@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Plato three product planes</title>
+  <desc id="desc">A diagram showing Plato's Inspiration Plane, Control Plane, and Trust Plane.</desc>
+  <rect width="1200" height="470" fill="#ffffff"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Three product planes</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">Plato separates understanding, action, and evidence so users can guide intelligent work.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(64 140)">
+      <rect x="0" y="0" width="320" height="210" rx="14" fill="#f3f8ff" stroke="#b8d1f2"/>
+      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Inspiration Plane</text>
+      <text x="28" y="74" font-size="14" fill="#4d5f79">Understand and shape the need</text>
+      <text x="28" y="116" font-size="15" fill="#182033">Intent discovery</text>
+      <text x="28" y="146" font-size="15" fill="#182033">Clarifying questions</text>
+      <text x="28" y="176" font-size="15" fill="#182033">Assumptions and constraints</text>
+    </g>
+    <g transform="translate(440 140)">
+      <rect x="0" y="0" width="320" height="210" rx="14" fill="#fff8e8" stroke="#ead28a"/>
+      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Control Plane</text>
+      <text x="28" y="74" font-size="14" fill="#6b5a27">Review and run visible work</text>
+      <text x="28" y="116" font-size="15" fill="#182033">Draft TaskTree</text>
+      <text x="28" y="146" font-size="15" fill="#182033">Task state and confirmations</text>
+      <text x="28" y="176" font-size="15" fill="#182033">Progress and result actions</text>
+    </g>
+    <g transform="translate(816 140)">
+      <rect x="0" y="0" width="320" height="210" rx="14" fill="#eefaf4" stroke="#b8e5ce"/>
+      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Trust Plane</text>
+      <text x="28" y="74" font-size="14" fill="#3e6d57">Inspect what happened and why</text>
+      <text x="28" y="116" font-size="15" fill="#182033">Results and file changes</text>
+      <text x="28" y="146" font-size="15" fill="#182033">Audit evidence</text>
+      <text x="28" y="176" font-size="15" fill="#182033">Diagnostics and traceability</text>
+    </g>
+  </g>
+  <path d="M398 245h28" stroke="#5b8fd9" stroke-width="3"/>
+  <path d="M426 245l-12-8v16z" fill="#5b8fd9"/>
+  <path d="M774 245h28" stroke="#5b8fd9" stroke-width="3"/>
+  <path d="M802 245l-12-8v16z" fill="#5b8fd9"/>
+  <rect x="64" y="390" width="1072" height="44" rx="12" fill="#fbfaf7" stroke="#dce3ee"/>
+  <text x="88" y="418" font-family="Inter, Arial, sans-serif" font-size="15" fill="#182033">Product direction: deepen the Inspiration Plane so Plato understands the user's need before work becomes executable.</text>
+</svg>

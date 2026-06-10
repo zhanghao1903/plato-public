@@ -2,8 +2,8 @@
 
 Plato is a task-first intelligent workbench for local AI-assisted work.
 
-The product is built around one belief: users should see what the system thinks
-the work is before the system acts.
+The product is built around one belief: intelligent work should be understood,
+controlled, and trusted by the user at every step.
 
 ## Product Thesis
 
@@ -11,6 +11,7 @@ Plato turns unclear intent into structured, reviewable work:
 
 ```text
 Natural language goal
+  -> Clarification when needed
   -> TaskTree
   -> TaskNode review
   -> Confirmed execution
@@ -26,24 +27,99 @@ A task is a visible work contract:
 - during execution, it is delegated work under user supervision;
 - after execution, it anchors the result, file changes, and audit trail.
 
-## Product Layers
+## The Three Product Planes
 
-| Layer | Meaning |
+![Plato three product planes](../../assets/images/plato-three-planes.svg)
+
+Plato presents this contract through three product planes.
+
+| Plane | Primary question | Product responsibility |
 |---|---|
-| Plato | User-facing product and release identity. |
-| TaskWeavn | Local task-agent runtime behind Plato. |
-| Workflow | User-facing mode for a session of work. |
-| Session | Collaboration boundary for one active work context. |
-| TaskTree | Structured representation of the user's goal. |
-| TaskNode | Smallest unit of review, confirmation, execution, and evidence. |
-| Result | User-readable output of completed work. |
-| Audit | Trust surface for tracing what happened and why. |
+| Inspiration Plane | What does the user actually need, and what does Plato understand? | Captures intent, asks for clarification, exposes assumptions, and prepares a draftable work shape. |
+| Control Plane | What work will happen, what is happening now, and what needs the user? | Shows TaskTree review, task state, confirmations, progress, result actions, and next steps. |
+| Trust Plane | What happened, why, and what evidence exists? | Shows results, changed files, audit records, diagnostics, and traceability after execution. |
+
+### Inspiration Plane
+
+The Inspiration Plane is where the product begins understanding the user.
+
+It is not a marketing surface. It is the product space for intent discovery:
+the user states a goal, Plato identifies missing context, asks focused
+questions, evaluates whether the goal is ready to plan, and turns the answer
+into a clearer task structure.
+
+This plane matters because the most expensive failure happens before execution:
+the system solves the wrong problem. Plato should make misunderstanding visible
+early, before the user is asked to confirm or run work.
+
+### Control Plane
+
+The Control Plane is the user's action surface.
+
+It should answer:
+
+- what goal or workflow is active;
+- what task structure Plato proposes;
+- which tasks need review, confirmation, or input;
+- what is queued, running, completed, failed, or waiting;
+- what result was produced;
+- what the user can do next.
+
+The Main Page is the primary Control Plane. It should stay action-oriented and
+avoid exposing every internal implementation detail.
+
+### Trust Plane
+
+The Trust Plane is the evidence surface.
+
+It should answer:
+
+- what was planned;
+- what ran;
+- what changed;
+- what the user confirmed;
+- what evidence supports the result;
+- where risks, failures, or missing evidence can be inspected.
+
+The Audit Page is the primary Trust Plane. It can be more complete and precise
+than the Main Page because it exists for traceability, review, and debugging.
+
+## Why Three Planes
+
+Plato needs three planes because AI-assisted work has three separate user
+risks:
+
+1. Misunderstanding: the system may start from an incomplete or wrong reading
+   of the user's need.
+2. Loss of control: the system may move from plan to action without enough
+   user-visible structure.
+3. Lack of trust: the system may produce an answer or file change that the user
+   cannot verify.
+
+A single chat thread collapses these risks into one surface. Plato separates
+them so each part can be designed with the right level of detail:
+
+- the Inspiration Plane can slow down and ask better questions;
+- the Control Plane can stay concise and action-oriented;
+- the Trust Plane can preserve evidence without overwhelming the main work
+  surface.
+
+## Product Direction
+
+The next product emphasis is the Inspiration Plane.
+
+This is the start of understanding user needs: clarifying goals, surfacing
+assumptions, collecting constraints, and deciding whether a request is ready to
+become a task structure. A stronger Inspiration Plane should make the rest of
+the product safer: better plans, fewer misplaced confirmations, clearer
+execution, and more meaningful audit evidence.
 
 ## What Plato Prioritizes
 
 Plato prioritizes:
 
 - legibility before automation;
+- clarification before planning when the user's goal is incomplete;
 - review before consequential execution;
 - task-scoped confirmation instead of context-free popups;
 - visible result and file-change summaries;
