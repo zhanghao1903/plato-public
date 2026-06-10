@@ -64,7 +64,8 @@ Important status notes:
 - This public repository currently hosts public release metadata and product
   documentation. It is not a source-code mirror.
 
-See [macOS local release usage](docs/usage/macos-local-release.md).
+See [macOS local release usage](docs/usage/macos-local-release.md) and the
+[user guide](docs/usage/user-guide.md).
 
 ## Product Planes
 
@@ -99,6 +100,7 @@ Read more:
 
 - [Product overview](docs/product/overview.md)
 - [Task-first workflow](docs/product/task-first-workflow.md)
+- [User guide](docs/usage/user-guide.md)
 - [Release status](docs/product/release-status.md)
 
 ## Product Screens
@@ -106,16 +108,16 @@ Read more:
 The following screenshots use public-safe sample data captured from the local
 Plato mock and sidecar flows.
 
-![Plato Main Page](assets/images/plato-main-page.png)
+![Plato Main Page](assets/screenshots/plato-main-page.png)
 
 The Main Page is the control plane for reviewing the plan, publishing tasks,
 watching state, and opening audit.
 
-![Plato Audit Page](assets/images/plato-audit-page.png)
+![Plato Audit Page](assets/screenshots/plato-audit-page.png)
 
 The Audit Page is the read-only trust plane for evidence and traceability.
 
-![Plato Workspace Inspection](assets/images/plato-workspace-inspection.png)
+![Plato Workspace Inspection](assets/screenshots/plato-workspace-inspection.png)
 
 Workspace inspection shows repository status and file-level inspection links
 using renderer-safe path labels. This screenshot is a public-safe local sidecar

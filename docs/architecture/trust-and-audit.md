@@ -52,7 +52,7 @@ Workspace inspection is the next trust-building direction:
 The public screenshot uses a local sample workspace and renderer-safe path
 labels:
 
-![Plato Workspace Inspection](../../assets/images/plato-workspace-inspection.png)
+![Plato Workspace Inspection](../../assets/screenshots/plato-workspace-inspection.png)
 
 Release-specific availability should still be checked against
 [Release status](../product/release-status.md).

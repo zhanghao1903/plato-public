@@ -1,6 +1,7 @@
 # Public Images
 
-This directory contains public-safe Plato diagrams and screenshots.
+This directory contains public-safe Plato diagrams and generated explanatory
+images.
 
 | File | Purpose |
 |---|---|
@@ -14,9 +15,8 @@ This directory contains public-safe Plato diagrams and screenshots.
 | `plato-control-trust-plane.svg` | Main Page control plane and Audit Page trust plane comparison. |
 | `plato-macos-local-release.svg` | macOS local release caveat and install flow diagram. |
 | `plato-public-docs-map.svg` | Public repository documentation map. |
-| `plato-main-page.png` | Sanitized Main Page screenshot from local mock runtime. |
-| `plato-audit-page.png` | Sanitized Audit Page screenshot from local mock runtime. |
-| `plato-workspace-inspection.png` | Sanitized Workspace Inspection screenshot from a temporary local git workspace. |
 
-Do not add screenshots with private paths, local usernames, real user content,
-API keys, raw diagnostics, or private repository URLs.
+Product screenshots live in [`../screenshots`](../screenshots).
+
+Do not add images with private paths, local usernames, real user content, API
+keys, raw diagnostics, or private repository URLs.

@@ -158,6 +158,6 @@ For exact release metadata, see [Release status](release-status.md).
 
 Current public-safe screenshots:
 
-- [Main Page](../../assets/images/plato-main-page.png)
-- [Audit Page](../../assets/images/plato-audit-page.png)
-- [Workspace Inspection](../../assets/images/plato-workspace-inspection.png)
+- [Main Page](../../assets/screenshots/plato-main-page.png)
+- [Audit Page](../../assets/screenshots/plato-audit-page.png)
+- [Workspace Inspection](../../assets/screenshots/plato-workspace-inspection.png)

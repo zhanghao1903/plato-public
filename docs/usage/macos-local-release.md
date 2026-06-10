@@ -31,6 +31,9 @@ and use Finder's contextual Open action if Gatekeeper blocks the first launch.
 - The public repository hosts release metadata and public docs, not private
   source code or internal diagnostics.
 
+After opening Plato, see the [user guide](user-guide.md) for the basic product
+loop.
+
 ## Troubleshooting
 
 If the app does not open:
