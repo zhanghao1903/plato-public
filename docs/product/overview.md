@@ -99,6 +99,28 @@ It should answer:
 The Audit Page is the primary Trust Plane. It can be more complete and precise
 than the Main Page because it exists for traceability, review, and debugging.
 
+## ASK: When Plato Needs The User
+
+ASK is one of Plato's core interaction patterns.
+
+An ASK is not ordinary chat and not a confirmation. It appears when Plato lacks
+information that belongs to the user and should not guess.
+
+| ASK type | When it appears | Where the user answers | Why it matters |
+|---|---|---|---|
+| Authoring ASK | Before a TaskTree exists, while Plato is still shaping the plan. | Main Work Area. | Prevents the plan from being built on missing context. |
+| Execution ASK | During execution, when a running task is blocked by missing information. | Task detail panel. | Pauses the task instead of letting the agent continue by guessing. |
+
+Authoring ASK belongs to the Inspiration Plane. It helps users clarify goals,
+constraints, examples, and preferences before work becomes a plan.
+
+![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.svg)
+
+Execution ASK belongs to the Control Plane. It keeps the TaskTree visible while
+one task waits for user-owned information.
+
+![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.svg)
+
 ## Why Three Planes
 
 Plato needs three planes because AI-assisted work has three separate user

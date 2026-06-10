@@ -34,6 +34,8 @@ complete and precise.
 Public Plato docs use these evidence anchors:
 
 - Task: the unit of planned and executed work.
+- ASK: user-owned information requested before planning or while execution is
+  blocked.
 - Result: user-readable outcome of a task or session.
 - File change: what changed in the local workspace.
 - Audit entry: evidence trail for actions, confirmations, and runtime facts.

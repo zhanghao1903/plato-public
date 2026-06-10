@@ -36,6 +36,11 @@ Useful context can include:
 - examples of a good result;
 - timing, quality, or risk constraints.
 
+When Plato needs this information before it can build a useful plan, it should
+ask you directly. This is an Authoring ASK.
+
+![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.svg)
+
 ## 3. Review The Plan
 
 The Main Page is the control surface.
@@ -65,6 +70,15 @@ Use confirmations to pause on actions such as:
 - running a risky command;
 - using a sensitive input;
 - continuing after an incomplete or uncertain result.
+
+ASK is different from confirmation. A confirmation means Plato knows the action
+but needs your approval. An ASK means Plato is missing information and should
+not guess.
+
+During execution, Plato may ask a task-scoped question before continuing. This
+is an Execution ASK. Answer it from the task detail panel.
+
+![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.svg)
 
 ## 5. Inspect The Result
 

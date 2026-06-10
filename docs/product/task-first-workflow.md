@@ -36,6 +36,9 @@ This step is the core of the Inspiration Plane. It is where Plato helps the
 user understand how AI can help, learns what the user actually needs, and makes
 assumptions visible early.
 
+This planning question pattern is Authoring ASK. It appears before a TaskTree
+exists and is answered in the main work area.
+
 ## 3. Draft The TaskTree
 
 The system turns the clarified goal into a draft task structure.
@@ -65,6 +68,10 @@ Reviewed tasks are published into executable work.
 The early public release uses a local runtime and bundled Python sidecar
 candidate. Execution remains local to the user's machine and release status
 limits should be read from [Release status](release-status.md).
+
+If a running task is missing user-owned information, Plato should create an
+Execution ASK and pause that task instead of guessing. The user answers it from
+the task detail panel while keeping the TaskTree in view.
 
 Plane: Control.
 

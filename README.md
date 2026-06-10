@@ -90,11 +90,12 @@ product story.
 Plato is designed around a simple loop:
 
 1. State a goal in natural language.
-2. Clarify missing context before the goal becomes executable work.
+2. Answer ASK questions when Plato needs missing context before planning.
 3. Review the generated task structure before meaningful work starts.
-4. Confirm high-impact actions in context.
-5. Track progress through task states.
-6. Inspect the result, changed files, and audit trail.
+4. Answer task-scoped ASK questions if execution is blocked by missing information.
+5. Confirm high-impact actions in context.
+6. Track progress through task states.
+7. Inspect the result, changed files, and audit trail.
 
 Read more:
 
