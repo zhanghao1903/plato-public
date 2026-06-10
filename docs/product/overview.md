@@ -31,7 +31,7 @@ A task is a visible work contract:
 
 ## The Three Product Planes
 
-![Plato three product planes](../../assets/images/plato-three-planes-generated.png)
+![Plato three product planes](../../assets/images/plato-three-planes.svg)
 
 Plato presents this contract through three product planes.
 
@@ -42,8 +42,6 @@ Plato presents this contract through three product planes.
 | Trust Plane | What happened, why, and what evidence exists? | Shows results, changed files, audit records, diagnostics, and traceability after execution. |
 
 ### Inspiration Plane
-
-![Plato Inspiration Plane](../../assets/images/plato-inspiration-plane.png)
 
 The Inspiration Plane is where the product begins understanding the user.
 
@@ -71,8 +69,6 @@ plane much stronger.
 
 ### Control Plane
 
-![Plato Control Plane](../../assets/images/plato-control-plane.png)
-
 The Control Plane is the user's action surface.
 
 It should answer:
@@ -88,8 +84,6 @@ The Main Page is the primary Control Plane. It should stay action-oriented and
 avoid exposing every internal implementation detail.
 
 ### Trust Plane
-
-![Plato Trust Plane](../../assets/images/plato-trust-plane.png)
 
 The Trust Plane is the evidence surface.
 

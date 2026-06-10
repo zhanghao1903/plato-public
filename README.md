@@ -68,7 +68,7 @@ See [macOS local release usage](docs/usage/macos-local-release.md).
 
 ## Product Planes
 
-![Plato three product planes](assets/images/plato-three-planes-generated.png)
+![Plato three product planes](assets/images/plato-three-planes.svg)
 
 | Plane | User question | Product role |
 |---|---|---|

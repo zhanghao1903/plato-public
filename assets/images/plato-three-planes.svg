@@ -1,39 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
   <title id="title">Plato three product planes</title>
-  <desc id="desc">A diagram showing Plato's Inspiration Plane, Control Plane, and Trust Plane.</desc>
-  <rect width="1200" height="470" fill="#ffffff"/>
-  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Three product planes</text>
-  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">Plato separates understanding, action, and evidence so users can guide intelligent work.</text>
+  <desc id="desc">A text diagram explaining the Inspiration Plane, Control Plane, and Trust Plane, plus their relationships.</desc>
+  <rect width="1400" height="780" fill="#fbfaf7"/>
+
   <g font-family="Inter, Arial, sans-serif">
-    <g transform="translate(64 140)">
-      <rect x="0" y="0" width="320" height="210" rx="14" fill="#f3f8ff" stroke="#b8d1f2"/>
-      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Inspiration Plane</text>
-      <text x="28" y="74" font-size="14" fill="#4d5f79">Understand and shape the need</text>
-      <text x="28" y="116" font-size="15" fill="#182033">Intent discovery</text>
-      <text x="28" y="146" font-size="15" fill="#182033">Clarifying questions</text>
-      <text x="28" y="176" font-size="15" fill="#182033">Assumptions and constraints</text>
-    </g>
-    <g transform="translate(440 140)">
-      <rect x="0" y="0" width="320" height="210" rx="14" fill="#fff8e8" stroke="#ead28a"/>
-      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Control Plane</text>
-      <text x="28" y="74" font-size="14" fill="#6b5a27">Review and run visible work</text>
-      <text x="28" y="116" font-size="15" fill="#182033">Draft TaskTree</text>
-      <text x="28" y="146" font-size="15" fill="#182033">Task state and confirmations</text>
-      <text x="28" y="176" font-size="15" fill="#182033">Progress and result actions</text>
-    </g>
-    <g transform="translate(816 140)">
-      <rect x="0" y="0" width="320" height="210" rx="14" fill="#eefaf4" stroke="#b8e5ce"/>
-      <text x="28" y="44" font-size="23" font-weight="700" fill="#182033">Trust Plane</text>
-      <text x="28" y="74" font-size="14" fill="#3e6d57">Inspect what happened and why</text>
-      <text x="28" y="116" font-size="15" fill="#182033">Results and file changes</text>
-      <text x="28" y="146" font-size="15" fill="#182033">Audit evidence</text>
-      <text x="28" y="176" font-size="15" fill="#182033">Diagnostics and traceability</text>
-    </g>
+    <text x="64" y="68" font-size="34" font-weight="700" fill="#182033">Three product planes</text>
+    <text x="64" y="102" font-size="17" fill="#5f6f86">Plato separates AI-use guidance, execution control, and evidence review so intelligent work stays useful, steerable, and inspectable.</text>
+
+    <rect x="64" y="142" width="380" height="430" rx="16" fill="#f3f8ff" stroke="#a9c8f5" stroke-width="2"/>
+    <rect x="510" y="142" width="380" height="430" rx="16" fill="#fff8e8" stroke="#e5c766" stroke-width="2"/>
+    <rect x="956" y="142" width="380" height="430" rx="16" fill="#eefaf4" stroke="#9bd8bd" stroke-width="2"/>
+
+    <text x="96" y="194" font-size="27" font-weight="700" fill="#182033">Inspiration Plane</text>
+    <text x="96" y="224" font-size="16" font-weight="700" fill="#316aa6">Helps users use AI well</text>
+    <text x="96" y="270" font-size="15" fill="#182033">What it answers</text>
+    <text x="116" y="302" font-size="15" fill="#4d5f79">What can AI help me do?</text>
+    <text x="116" y="330" font-size="15" fill="#4d5f79">How should I ask or structure work?</text>
+    <text x="116" y="358" font-size="15" fill="#4d5f79">What context is missing?</text>
+    <text x="96" y="406" font-size="15" fill="#182033">Key work</text>
+    <text x="116" y="438" font-size="15" fill="#4d5f79">Discover use cases, prompt paths,</text>
+    <text x="116" y="464" font-size="15" fill="#4d5f79">workflow choices, assumptions.</text>
+    <rect x="96" y="500" width="316" height="48" rx="10" fill="#ffffff" stroke="#c9daf4"/>
+    <text x="116" y="530" font-size="15" font-weight="700" fill="#316aa6">Output: draftable intent</text>
+
+    <text x="542" y="194" font-size="27" font-weight="700" fill="#182033">Control Plane</text>
+    <text x="542" y="224" font-size="16" font-weight="700" fill="#7a5b08">Keeps work visible and steerable</text>
+    <text x="542" y="270" font-size="15" fill="#182033">What it answers</text>
+    <text x="562" y="302" font-size="15" fill="#62522a">What work will happen?</text>
+    <text x="562" y="330" font-size="15" fill="#62522a">What is running or waiting?</text>
+    <text x="562" y="358" font-size="15" fill="#62522a">What needs my decision?</text>
+    <text x="542" y="406" font-size="15" fill="#182033">Key work</text>
+    <text x="562" y="438" font-size="15" fill="#62522a">Review TaskTree, confirm risk,</text>
+    <text x="562" y="464" font-size="15" fill="#62522a">track progress, choose next action.</text>
+    <rect x="542" y="500" width="316" height="48" rx="10" fill="#ffffff" stroke="#ead28a"/>
+    <text x="562" y="530" font-size="15" font-weight="700" fill="#7a5b08">Output: controlled execution</text>
+
+    <text x="988" y="194" font-size="27" font-weight="700" fill="#182033">Trust Plane</text>
+    <text x="988" y="224" font-size="16" font-weight="700" fill="#34725b">Makes results inspectable</text>
+    <text x="988" y="270" font-size="15" fill="#182033">What it answers</text>
+    <text x="1008" y="302" font-size="15" fill="#466b5b">What happened and why?</text>
+    <text x="1008" y="330" font-size="15" fill="#466b5b">What changed?</text>
+    <text x="1008" y="358" font-size="15" fill="#466b5b">What evidence supports the result?</text>
+    <text x="988" y="406" font-size="15" fill="#182033">Key work</text>
+    <text x="1008" y="438" font-size="15" fill="#466b5b">Show results, file changes, audit,</text>
+    <text x="1008" y="464" font-size="15" fill="#466b5b">diagnostics, traceability.</text>
+    <rect x="988" y="500" width="316" height="48" rx="10" fill="#ffffff" stroke="#b8e5ce"/>
+    <text x="1008" y="530" font-size="15" font-weight="700" fill="#34725b">Output: confidence and learning</text>
+
+    <path d="M454 332h44" stroke="#5b8fd9" stroke-width="3" stroke-linecap="round"/>
+    <path d="M498 332l-13-9v18z" fill="#5b8fd9"/>
+    <text x="456" y="306" font-size="13" fill="#466b8a">clarified goal</text>
+    <text x="456" y="324" font-size="13" fill="#466b8a">becomes work</text>
+
+    <path d="M900 332h44" stroke="#4ba37a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M944 332l-13-9v18z" fill="#4ba37a"/>
+    <text x="900" y="306" font-size="13" fill="#4d7a64">execution</text>
+    <text x="900" y="324" font-size="13" fill="#4d7a64">produces evidence</text>
+
+    <rect x="92" y="618" width="1216" height="76" rx="16" fill="#ffffff" stroke="#dce3ee"/>
+    <path d="M1048 610C866 656 540 656 354 610" fill="none" stroke="#8a93a6" stroke-width="3" stroke-dasharray="8 8"/>
+    <path d="M354 610l15-4-8 14z" fill="#8a93a6"/>
+    <text x="122" y="650" font-size="17" font-weight="700" fill="#182033">Relationship rule</text>
+    <text x="122" y="678" font-size="15" fill="#5f6f86">Inspiration prepares better work. Control turns it into visible action. Trust checks the outcome and feeds evidence back into the next round of guidance.</text>
   </g>
-  <path d="M398 245h28" stroke="#5b8fd9" stroke-width="3"/>
-  <path d="M426 245l-12-8v16z" fill="#5b8fd9"/>
-  <path d="M774 245h28" stroke="#5b8fd9" stroke-width="3"/>
-  <path d="M802 245l-12-8v16z" fill="#5b8fd9"/>
-  <rect x="64" y="390" width="1072" height="44" rx="12" fill="#fbfaf7" stroke="#dce3ee"/>
-  <text x="88" y="418" font-family="Inter, Arial, sans-serif" font-size="15" fill="#182033">Product direction: deepen the Inspiration Plane so Plato understands the user's need before work becomes executable.</text>
 </svg>
