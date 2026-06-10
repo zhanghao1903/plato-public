@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Plato context governance</title>
+  <desc id="desc">A diagram showing task, workspace, events, and permissions flowing into bounded model context.</desc>
+  <rect width="1200" height="430" fill="#ffffff"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Context governance</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">The runtime assembles bounded task context before model calls.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="72" y="146" width="180" height="70" rx="12" fill="#e8f1fb" stroke="#b8d1f2"/>
+    <text x="106" y="188" font-size="17" font-weight="700" fill="#182033">Task facts</text>
+    <rect x="72" y="246" width="180" height="70" rx="12" fill="#e8f1fb" stroke="#b8d1f2"/>
+    <text x="94" y="288" font-size="17" font-weight="700" fill="#182033">Workspace facts</text>
+    <rect x="316" y="146" width="180" height="70" rx="12" fill="#fff7df" stroke="#ead28a"/>
+    <text x="358" y="188" font-size="17" font-weight="700" fill="#182033">Events</text>
+    <rect x="316" y="246" width="180" height="70" rx="12" fill="#fff7df" stroke="#ead28a"/>
+    <text x="352" y="288" font-size="17" font-weight="700" fill="#182033">Permissions</text>
+    <rect x="590" y="176" width="250" height="110" rx="16" fill="#ecfbf4" stroke="#b8e5ce"/>
+    <text x="636" y="224" font-size="21" font-weight="700" fill="#182033">Context Manager</text>
+    <text x="636" y="252" font-size="14" fill="#697386">Bounded, task-scoped input</text>
+    <rect x="934" y="176" width="190" height="110" rx="16" fill="#f6f3ff" stroke="#d7c9f4"/>
+    <text x="988" y="224" font-size="21" font-weight="700" fill="#182033">LLM</text>
+    <text x="974" y="252" font-size="14" fill="#697386">Stateless call</text>
+  </g>
+  <g stroke="#5b8fd9" stroke-width="3" fill="#5b8fd9">
+    <path d="M260 181h312"/>
+    <path d="M572 181l-12-8v16z"/>
+    <path d="M260 281h312"/>
+    <path d="M572 281l-12-8v16z"/>
+    <path d="M504 181l68 40"/>
+    <path d="M504 281l68-40"/>
+    <path d="M852 231h62"/>
+    <path d="M914 231l-12-8v16z"/>
+  </g>
+</svg>

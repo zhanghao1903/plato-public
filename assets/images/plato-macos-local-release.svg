@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Plato macOS local release status</title>
+  <desc id="desc">A diagram showing the current macOS local release candidate status: download, verify checksum, open from Finder if needed.</desc>
+  <rect width="1200" height="360" fill="#ffffff"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">macOS local release candidate</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">Current public artifact: unsigned and non-notarized Plato 0.1.0 for Apple Silicon.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="88" y="146" width="260" height="104" rx="16" fill="#e8f1fb" stroke="#b8d1f2"/>
+    <text x="126" y="188" font-size="20" font-weight="700" fill="#182033">Download DMG</text>
+    <text x="126" y="216" font-size="14" fill="#697386">Plato-0.1.0-macos-arm64</text>
+    <rect x="470" y="146" width="260" height="104" rx="16" fill="#fff7df" stroke="#ead28a"/>
+    <text x="508" y="188" font-size="20" font-weight="700" fill="#182033">Verify SHA256</text>
+    <text x="508" y="216" font-size="14" fill="#697386">Match published checksum</text>
+    <rect x="852" y="146" width="260" height="104" rx="16" fill="#ecfbf4" stroke="#b8e5ce"/>
+    <text x="890" y="188" font-size="20" font-weight="700" fill="#182033">Open Locally</text>
+    <text x="890" y="216" font-size="14" fill="#697386">Use Finder Open if blocked</text>
+  </g>
+  <g stroke="#5b8fd9" stroke-width="3" fill="#5b8fd9">
+    <path d="M366 198h86"/>
+    <path d="M452 198l-12-8v16z"/>
+    <path d="M748 198h86"/>
+    <path d="M834 198l-12-8v16z"/>
+  </g>
+</svg>

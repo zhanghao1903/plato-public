@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Plato public preview</title>
+  <desc id="desc">A social preview image for Plato, the task-first intelligent workbench.</desc>
+  <rect width="1200" height="630" fill="#fbfaf7"/>
+  <rect x="72" y="72" width="1056" height="486" rx="34" fill="#ffffff" stroke="#dce3ee"/>
+  <g transform="translate(132 132)">
+    <rect x="0" y="0" width="118" height="118" rx="30" fill="#2b5caa"/>
+    <path d="M41 89V29h34c19 0 32 12 32 30s-13 30-32 30H58V70h16c8 0 14-4 14-11s-6-11-14-11H58v41z" fill="#ffffff"/>
+    <path d="M41 89l17-19v38z" fill="#35bde8"/>
+  </g>
+  <text x="288" y="176" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700" fill="#182033">Plato</text>
+  <text x="288" y="232" font-family="Inter, Arial, sans-serif" font-size="30" fill="#697386">Task-first intelligent workbench</text>
+  <text x="132" y="344" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Turn intention into visible, reviewable, executable, and auditable tasks.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="20" fill="#182033">
+    <rect x="132" y="414" width="198" height="58" rx="16" fill="#e8f1fb"/>
+    <text x="171" y="451">Intent</text>
+    <rect x="378" y="414" width="198" height="58" rx="16" fill="#fff7df"/>
+    <text x="416" y="451">TaskTree</text>
+    <rect x="624" y="414" width="198" height="58" rx="16" fill="#ecfbf4"/>
+    <text x="662" y="451">Execution</text>
+    <rect x="870" y="414" width="198" height="58" rx="16" fill="#f6f3ff"/>
+    <text x="918" y="451">Audit</text>
+  </g>
+  <g stroke="#5b8fd9" stroke-width="3" fill="#5b8fd9">
+    <path d="M342 443h24"/>
+    <path d="M366 443l-10-7v14z"/>
+    <path d="M588 443h24"/>
+    <path d="M612 443l-10-7v14z"/>
+    <path d="M834 443h24"/>
+    <path d="M858 443l-10-7v14z"/>
+  </g>
+</svg>
