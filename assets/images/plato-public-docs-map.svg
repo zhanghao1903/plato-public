@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Plato public documentation map</title>
+  <desc id="desc">A diagram mapping public README, product docs, architecture docs, usage docs, release metadata, and image assets.</desc>
+  <rect width="1200" height="430" fill="#fbfaf7"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Public repository map</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">How this repository is organized for visitors.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="92" y="154" width="180" height="76" rx="14" fill="#2b5caa"/>
+    <text x="133" y="199" font-size="20" font-weight="700" fill="#ffffff">README</text>
+    <rect x="368" y="118" width="210" height="76" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="414" y="163" font-size="18" font-weight="700" fill="#182033">Product docs</text>
+    <rect x="368" y="226" width="210" height="76" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="398" y="271" font-size="18" font-weight="700" fill="#182033">Architecture docs</text>
+    <rect x="674" y="118" width="210" height="76" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="732" y="163" font-size="18" font-weight="700" fill="#182033">Usage docs</text>
+    <rect x="674" y="226" width="210" height="76" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="724" y="271" font-size="18" font-weight="700" fill="#182033">Images</text>
+    <rect x="980" y="172" width="150" height="76" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="1016" y="217" font-size="18" font-weight="700" fill="#182033">Release</text>
+  </g>
+  <g stroke="#5b8fd9" stroke-width="3" fill="#5b8fd9">
+    <path d="M286 192h62"/>
+    <path d="M348 192l-12-8v16z"/>
+    <path d="M286 192l62-40"/>
+    <path d="M348 152l-13-5l4 14z"/>
+    <path d="M286 192l62 76"/>
+    <path d="M348 268l-6-13l-9 11z"/>
+    <path d="M596 156h60"/>
+    <path d="M656 156l-12-8v16z"/>
+    <path d="M596 264h60"/>
+    <path d="M656 264l-12-8v16z"/>
+    <path d="M902 210h58"/>
+    <path d="M960 210l-12-8v16z"/>
+  </g>
+</svg>

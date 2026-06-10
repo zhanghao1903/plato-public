@@ -17,6 +17,8 @@ and where to inspect evidence.
 The Main Page should remain action-oriented. The Audit Page can be more
 complete and precise.
 
+![Main Page and Audit Page](../../assets/images/plato-control-trust-plane.svg)
+
 ## Evidence Anchors
 
 Public Plato docs use these evidence anchors:

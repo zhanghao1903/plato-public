@@ -8,6 +8,8 @@ Download the latest public asset:
 
 - [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
 
+![Plato macOS local release](../../assets/images/plato-macos-local-release.svg)
+
 Verify the checksum if needed:
 
 ```text

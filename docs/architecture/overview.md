@@ -53,6 +53,8 @@ The UI consumes product projections rather than raw runtime internals.
 
 LLM calls are stateless, but Plato work sessions are stateful.
 
+![Plato context governance](../../assets/images/plato-context-governance.svg)
+
 The runtime assembles task, workspace, event, permission, and recent result
 facts into bounded context before model calls. This keeps execution tied to the
 visible task and audit record instead of hidden chat memory.
