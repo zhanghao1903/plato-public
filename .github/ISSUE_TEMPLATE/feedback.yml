@@ -1,0 +1,36 @@
+name: Product feedback
+description: Share feedback about Plato's UX, product direction, or docs.
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      description: Describe the user goal or scenario.
+    validations:
+      required: true
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What felt confusing or useful?
+      description: Mention the page, interaction, or wording if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect Plato to do?
+    validations:
+      required: false
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: Which best describes you?
+      options:
+        - Non-technical user
+        - Technical user
+        - Recruiter or reviewer
+        - Other
+    validations:
+      required: false

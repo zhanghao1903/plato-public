@@ -1,39 +1,142 @@
 # Plato
 
-Plato is a task-first intelligent workbench.
+Turn vague goals into visible task plans, run them locally, and inspect what
+happened.
 
-It helps users start from an unclear goal, shape that goal into reviewable
-work, control execution, and inspect evidence afterward.
+Plato is a task-first intelligent workbench. Instead of hiding work in a long
+chat transcript, it turns a goal into a plan, lets you review and guide each
+task, asks for confirmation when needed, and keeps an audit trail afterward.
 
-![Plato task-first workbench](assets/images/plato-hero.svg)
+![Plato Main Page](assets/screenshots/plato-main-page.png)
 
-## What Plato Is
+## Try Plato
 
-Most AI tools make the conversation the main object. Plato makes the task the
-main object, and organizes the product around three planes:
+Current public release: `0.1.0` for macOS Apple Silicon.
 
-- Inspiration Plane: help the user discover what AI can do, learn how to use
-  AI through better prompts and workflows, clarify missing context, and shape
-  fuzzy intent into work that can be planned.
-- Control Plane: show the plan, task state, confirmations, running work, and
-  result actions in one action-oriented surface.
-- Trust Plane: keep outcomes, file changes, audit evidence, and diagnostics
-  inspectable after work happens.
+- [Download Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Quickstart](docs/usage/quickstart.md)
+- [User guide](docs/usage/user-guide.md)
+- [FAQ](docs/usage/faq.md)
+- [中文文档](docs/zh/README.md)
+- [Release notes](docs/releases/0.1.0.md)
 
-```text
-User intent
-  -> Clarification when needed
-  -> Draft TaskTree
-  -> Review and confirmation
-  -> Local execution
-  -> Result, file changes, and audit evidence
-```
+Important: `0.1.0` is an unsigned and non-notarized local release candidate.
+macOS may require opening it from Finder with the contextual Open action. See
+[macOS local release usage](docs/usage/macos-local-release.md).
 
-The three planes exist because intelligent work fails in three different ways:
-the user may not know how AI can help or how to ask, the user can lose control
-during execution, or the result can be hard to trust afterward. Plato treats
-those as separate product responsibilities instead of hiding all of them in
-chat.
+## Why Plato
+
+Chat is good for conversation. Plato is built for work that needs planning,
+confirmation, and trust.
+
+| Common AI surface | Main object | What can go wrong |
+|---|---|---|
+| Chat assistant | Conversation | The plan, decisions, and results can disappear into a transcript. |
+| Coding agent | Files and commands | The user may lose track of what is being changed and why. |
+| Workflow tool | Forms and steps | The user must know the workflow before the system can help. |
+| Plato | Task plan | The user sees the work structure, guides tasks, confirms risk, and checks evidence. |
+
+Plato's product bet is simple: ordinary users should not need to understand
+agents, tools, prompts, or runtime internals before they can stay in control.
+
+## How It Works
+
+![Plato product flow](assets/images/plato-product-flow.svg)
+
+1. Describe a goal in natural language.
+2. Plato asks for missing context when it should not guess.
+3. Plato drafts a visible task plan.
+4. You review, refine, or publish the plan.
+5. Plato runs approved work locally.
+6. You inspect progress, results, file changes, and audit evidence.
+
+Read the deeper model in [Task-first workflow](docs/product/task-first-workflow.md).
+
+## What You Can Try Today
+
+The current local release is best for early evaluation of the task-first loop:
+
+- turn a rough goal into a reviewable task plan;
+- inspect task status and current activity;
+- answer user-owned questions instead of letting the system guess;
+- open a read-only Audit Page to understand evidence and traceability;
+- explore public-safe examples of workspace inspection and trust surfaces.
+
+For concrete examples, see [Use cases](docs/product/use-cases.md).
+
+## Product Screens
+
+The screenshots below use public-safe sample data.
+
+### Control Plane: Main Page
+
+![Plato task plan control plane](assets/screenshots/plato-main-page.png)
+
+The Main Page is where users review a plan, inspect tasks, publish work, track
+status, and open audit.
+
+### ASK: When Plato Needs The User
+
+![Plato authoring ask](assets/screenshots/plato-authoring-ask.svg)
+
+An Authoring ASK appears before the plan exists, when Plato needs context that
+belongs to the user.
+
+![Plato execution ask](assets/screenshots/plato-execution-ask.svg)
+
+An Execution ASK appears during task work, when a task should pause instead of
+guessing.
+
+### Trust Plane: Audit Page
+
+![Plato Audit Page](assets/screenshots/plato-audit-page.png)
+
+The Audit Page is a read-only trust surface for evidence, diagnostics, and
+traceability.
+
+### Workspace Inspection Preview
+
+![Plato Workspace Inspection](assets/screenshots/plato-workspace-inspection.png)
+
+Workspace inspection shows repository status and file-level inspection links
+using renderer-safe path labels. Check [Release status](docs/product/release-status.md)
+before treating this surface as available in a specific public release.
+
+## Product Model
+
+![Plato three product planes](assets/images/plato-three-planes.svg)
+
+Plato is organized around three product planes:
+
+| Plane | User question | Product role |
+|---|---|---|
+| Inspiration Plane | What can AI help me do, how should I use it, and what does Plato understand? | Helps users shape fuzzy goals into work that can be planned. |
+| Control Plane | What work will happen, what is running, and what needs me? | Keeps plans, task state, confirmations, and results visible. |
+| Trust Plane | What happened, why, and what evidence exists? | Makes results, file changes, audit records, and diagnostics inspectable. |
+
+Start with [Product overview](docs/product/overview.md) if you want the product
+thesis.
+
+## For Users
+
+- [Quickstart](docs/usage/quickstart.md): shortest path from download to first plan.
+- [User guide](docs/usage/user-guide.md): how to use Plato's task-first loop.
+- [FAQ](docs/usage/faq.md): safety, unsigned release, data, logs, and limits.
+- [Privacy and safety](docs/security/privacy-and-safety.md): what the current
+  local release does and does not guarantee.
+- [Release status](docs/product/release-status.md): exact public release caveats.
+- [中文文档](docs/zh/README.md): Chinese quickstart, FAQ, use cases, safety, and
+  release notes.
+
+## For Reviewers
+
+- [Engineering highlights](docs/engineering/highlights.md): what this project
+  demonstrates technically.
+- [Architecture overview](docs/architecture/overview.md): public system shape.
+- [Trust and audit](docs/architecture/trust-and-audit.md): how Plato earns user
+  trust after work happens.
+- [Release notes](docs/releases/0.1.0.md): what shipped in the public `0.1.0`
+  local release candidate.
 
 ## Current Public Release
 
@@ -56,93 +159,38 @@ Release metadata:
 - [manifest.json](releases/0.1.0/manifest.json)
 - [SHA256SUMS](releases/0.1.0/SHA256SUMS)
 
-Important status notes:
+Status notes:
 
-- This is an unsigned and non-notarized local release candidate.
-- macOS may require opening it from Finder with the contextual Open action.
-- The package includes a bundled Python sidecar runtime candidate.
-- This public repository currently hosts public release metadata and product
-  documentation. It is not a source-code mirror.
+- unsigned and non-notarized;
+- local release candidate, not a polished app-store release;
+- includes a bundled Python sidecar runtime candidate;
+- this repository hosts release metadata and public docs, not source code.
 
-See [macOS local release usage](docs/usage/macos-local-release.md) and the
-[user guide](docs/usage/user-guide.md).
+## Current Limitations
 
-## Product Planes
+- The release is intended for early evaluation.
+- Signing, notarization, auto-update, and broad platform packaging are not yet
+  complete.
+- Some screenshots show public-safe development previews; release availability
+  is tracked in [Release status](docs/product/release-status.md).
+- Plato is not positioned as a one-click autonomous worker. The current product
+  direction is visible planning, local execution, user confirmation, and audit.
 
-![Plato three product planes](assets/images/plato-three-planes.svg)
+## Repository Map
 
-| Plane | User question | Product role |
-|---|---|---|
-| Inspiration Plane | What can AI help me do, how should I use it, and what does Plato understand? | Helps users discover AI use cases, choose better prompt/workflow paths, and turn fuzzy goals into clarified, draftable work. |
-| Control Plane | What work will happen, what is running, and what needs me? | Keeps plan, status, confirmation, and result actions visible. |
-| Trust Plane | What happened, why, and what evidence exists? | Makes results, file changes, and audit evidence inspectable. |
+```text
+docs/
+  product/       Product thesis, workflow, use cases, release status.
+  usage/         Quickstart, user guide, macOS local release help, FAQ.
+  architecture/  Public architecture, trust, and audit model.
+  engineering/   Reviewer-facing technical highlights.
+  security/      Privacy and safety notes for the public release.
+  releases/      Human-readable release notes.
+assets/
+  images/        Product and architecture diagrams.
+  screenshots/   Public-safe UI screenshots.
+releases/
+  0.1.0/         Machine-readable manifest and checksum files.
+```
 
-The next product emphasis is the Inspiration Plane. This is where Plato should
-help users understand what AI can do for them, how to shape prompts and
-workflows, what context is missing, and whether a goal is ready to become a
-task structure. This is also the least developed part of the current public
-product story.
-
-## Task-First Loop
-
-![Plato product flow](assets/images/plato-product-flow.svg)
-
-Plato is designed around a simple loop:
-
-1. State a goal in natural language.
-2. Answer ASK questions when Plato needs missing context before planning.
-3. Review the generated task structure before meaningful work starts.
-4. Answer task-scoped ASK questions if execution is blocked by missing information.
-5. Confirm high-impact actions in context.
-6. Track progress through task states.
-7. Inspect the result, changed files, and audit trail.
-
-Read more:
-
-- [Product overview](docs/product/overview.md)
-- [Task-first workflow](docs/product/task-first-workflow.md)
-- [User guide](docs/usage/user-guide.md)
-- [Release status](docs/product/release-status.md)
-
-## Product Screens
-
-The following screenshots use public-safe sample data captured from the local
-Plato mock and sidecar flows.
-
-![Plato Main Page](assets/screenshots/plato-main-page.png)
-
-The Main Page is the control plane for reviewing the plan, publishing tasks,
-watching state, and opening audit.
-
-![Plato Audit Page](assets/screenshots/plato-audit-page.png)
-
-The Audit Page is the read-only trust plane for evidence and traceability.
-
-![Plato Workspace Inspection](assets/screenshots/plato-workspace-inspection.png)
-
-Workspace inspection shows repository status and file-level inspection links
-using renderer-safe path labels. This screenshot is a public-safe local sidecar
-capture; check [Release status](docs/product/release-status.md) before treating
-this surface as available in a specific public release.
-
-## Architecture Preview
-
-![Plato architecture overview](assets/images/plato-architecture-overview.svg)
-
-Plato separates the work into four public concepts:
-
-- Authoring: turn intent into a draft task structure.
-- Publishing: move reviewed tasks into executable work.
-- Execution: run tasks in a local workspace.
-- Trust projection: show progress, results, file changes, and audit evidence.
-
-Read more:
-
-- [Architecture overview](docs/architecture/overview.md)
-- [Trust and audit](docs/architecture/trust-and-audit.md)
-
-## Public Visual Status
-
-This repository includes public-safe explanatory diagrams and sanitized product
-screenshots. Future releases should refresh screenshots when release status
-changes and add a repository/social preview image.
+![Plato public docs map](assets/images/plato-public-docs-map.svg)
