@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Plato public architecture overview</title>
+  <desc id="desc">A diagram showing Plato authoring, publishing, execution, and trust projection boundaries.</desc>
+  <rect width="1200" height="520" fill="#fbfaf7"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Public architecture overview</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">A product-readable map of the TaskWeavn runtime behind Plato.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="64" y="132" width="238" height="220" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="92" y="170" font-size="20" font-weight="700" fill="#182033">Authoring</text>
+    <text x="92" y="205" font-size="14" fill="#697386">User intent</text>
+    <text x="92" y="230" font-size="14" fill="#697386">Clarification</text>
+    <text x="92" y="255" font-size="14" fill="#697386">Draft TaskTree</text>
+    <text x="92" y="280" font-size="14" fill="#697386">Task review</text>
+    <rect x="360" y="132" width="180" height="220" rx="14" fill="#e8f1fb" stroke="#b8d1f2"/>
+    <text x="388" y="170" font-size="20" font-weight="700" fill="#182033">Publish</text>
+    <text x="388" y="205" font-size="14" fill="#697386">Reviewed tasks</text>
+    <text x="388" y="230" font-size="14" fill="#697386">become executable</text>
+    <text x="388" y="255" font-size="14" fill="#697386">work items</text>
+    <rect x="598" y="132" width="238" height="220" rx="14" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="626" y="170" font-size="20" font-weight="700" fill="#182033">Execution</text>
+    <text x="626" y="205" font-size="14" fill="#697386">Task runtime</text>
+    <text x="626" y="230" font-size="14" fill="#697386">Local workspace</text>
+    <text x="626" y="255" font-size="14" fill="#697386">Result facts</text>
+    <text x="626" y="280" font-size="14" fill="#697386">File-change facts</text>
+    <rect x="894" y="132" width="242" height="220" rx="14" fill="#ecfbf4" stroke="#b8e5ce"/>
+    <text x="922" y="170" font-size="20" font-weight="700" fill="#182033">Trust projection</text>
+    <text x="922" y="205" font-size="14" fill="#697386">Main Page</text>
+    <text x="922" y="230" font-size="14" fill="#697386">Audit Page</text>
+    <text x="922" y="255" font-size="14" fill="#697386">Diagnostics</text>
+    <text x="922" y="280" font-size="14" fill="#697386">Evidence refs</text>
+  </g>
+  <g stroke="#5b8fd9" stroke-width="3" fill="#5b8fd9">
+    <path d="M312 242h38" stroke-linecap="round"/>
+    <path d="M350 242l-12-8v16z"/>
+    <path d="M550 242h38" stroke-linecap="round"/>
+    <path d="M588 242l-12-8v16z"/>
+    <path d="M846 242h38" stroke-linecap="round"/>
+    <path d="M884 242l-12-8v16z"/>
+  </g>
+  <rect x="64" y="404" width="1072" height="56" rx="12" fill="#ffffff" stroke="#dce3ee"/>
+  <text x="88" y="438" font-family="Inter, Arial, sans-serif" font-size="15" fill="#182033">Boundary rule: planning, execution, and audit evidence are separate so users can review work before it changes the workspace.</text>
+</svg>

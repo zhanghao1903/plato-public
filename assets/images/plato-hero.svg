@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Plato task-first intelligent workbench</title>
+  <desc id="desc">A public hero graphic showing Plato turning intent into tasks, execution, results, and audit evidence.</desc>
+  <rect width="1200" height="520" fill="#fbfaf7"/>
+  <rect x="64" y="64" width="1072" height="392" rx="28" fill="#ffffff" stroke="#dce3ee"/>
+  <g transform="translate(112 112)">
+    <rect x="0" y="0" width="92" height="92" rx="24" fill="#2b5caa"/>
+    <path d="M31 69V23h26c15 0 25 9 25 23s-10 23-25 23H45v-15h11c6 0 10-3 10-8s-4-8-10-8H45v31z" fill="#ffffff"/>
+    <path d="M31 69l14-15v30z" fill="#35bde8"/>
+  </g>
+  <text x="232" y="152" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#182033">Plato</text>
+  <text x="232" y="198" font-family="Inter, Arial, sans-serif" font-size="24" fill="#697386">Task-first intelligent workbench</text>
+  <text x="232" y="250" font-family="Inter, Arial, sans-serif" font-size="18" fill="#182033">Turn intention into visible, reviewable, executable, and auditable tasks.</text>
+  <g transform="translate(112 318)" font-family="Inter, Arial, sans-serif">
+    <g>
+      <circle cx="26" cy="26" r="26" fill="#e8f1fb"/>
+      <text x="26" y="33" text-anchor="middle" font-size="18" font-weight="700" fill="#2b5caa">1</text>
+      <text x="64" y="21" font-size="16" font-weight="700" fill="#182033">Intent</text>
+      <text x="64" y="45" font-size="13" fill="#697386">User states the goal</text>
+    </g>
+    <path d="M248 26h80" stroke="#5b8fd9" stroke-width="3" stroke-linecap="round"/>
+    <path d="M328 26l-12-8v16z" fill="#5b8fd9"/>
+    <g transform="translate(360 0)">
+      <circle cx="26" cy="26" r="26" fill="#e8f1fb"/>
+      <text x="26" y="33" text-anchor="middle" font-size="18" font-weight="700" fill="#2b5caa">2</text>
+      <text x="64" y="21" font-size="16" font-weight="700" fill="#182033">TaskTree</text>
+      <text x="64" y="45" font-size="13" fill="#697386">Plato drafts the work</text>
+    </g>
+    <path d="M608 26h80" stroke="#5b8fd9" stroke-width="3" stroke-linecap="round"/>
+    <path d="M688 26l-12-8v16z" fill="#5b8fd9"/>
+    <g transform="translate(720 0)">
+      <circle cx="26" cy="26" r="26" fill="#e8f1fb"/>
+      <text x="26" y="33" text-anchor="middle" font-size="18" font-weight="700" fill="#2b5caa">3</text>
+      <text x="64" y="21" font-size="16" font-weight="700" fill="#182033">Evidence</text>
+      <text x="64" y="45" font-size="13" fill="#697386">Result, files, audit</text>
+    </g>
+  </g>
+</svg>

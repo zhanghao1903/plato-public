@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Plato trust and audit flow</title>
+  <desc id="desc">A diagram showing tasks producing results, file changes, audit evidence, and diagnostics.</desc>
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <text x="64" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#182033">Trust and audit flow</text>
+  <text x="64" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#697386">The task anchors what ran, what changed, and where evidence can be inspected.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="92" y="158" width="210" height="104" rx="14" fill="#e8f1fb" stroke="#b8d1f2"/>
+    <text x="122" y="200" font-size="20" font-weight="700" fill="#182033">TaskNode</text>
+    <text x="122" y="230" font-size="14" fill="#697386">Work contract</text>
+    <path d="M322 210h90" stroke="#5b8fd9" stroke-width="3"/>
+    <path d="M412 210l-12-8v16z" fill="#5b8fd9"/>
+    <rect x="432" y="86" width="210" height="84" rx="14" fill="#ecfbf4" stroke="#b8e5ce"/>
+    <text x="462" y="121" font-size="18" font-weight="700" fill="#182033">Result</text>
+    <text x="462" y="145" font-size="13" fill="#697386">User-readable outcome</text>
+    <rect x="432" y="198" width="210" height="84" rx="14" fill="#fff7df" stroke="#ead28a"/>
+    <text x="462" y="233" font-size="18" font-weight="700" fill="#182033">File changes</text>
+    <text x="462" y="257" font-size="13" fill="#697386">Workspace impact</text>
+    <rect x="432" y="310" width="210" height="84" rx="14" fill="#f6f3ff" stroke="#d7c9f4"/>
+    <text x="462" y="345" font-size="18" font-weight="700" fill="#182033">Confirmations</text>
+    <text x="462" y="369" font-size="13" fill="#697386">User decisions</text>
+    <path d="M660 128h116" stroke="#5b8fd9" stroke-width="3"/>
+    <path d="M660 240h116" stroke="#5b8fd9" stroke-width="3"/>
+    <path d="M660 352h116" stroke="#5b8fd9" stroke-width="3"/>
+    <path d="M776 128l-12-8v16z" fill="#5b8fd9"/>
+    <path d="M776 240l-12-8v16z" fill="#5b8fd9"/>
+    <path d="M776 352l-12-8v16z" fill="#5b8fd9"/>
+    <rect x="796" y="170" width="282" height="116" rx="16" fill="#ffffff" stroke="#dce3ee"/>
+    <text x="830" y="215" font-size="22" font-weight="700" fill="#182033">Audit Page</text>
+    <text x="830" y="248" font-size="14" fill="#697386">Traceable evidence and diagnostics</text>
+  </g>
+</svg>
