@@ -9,7 +9,8 @@ into a structured path the user can inspect and control.
 
 The workflow crosses three product planes:
 
-- Inspiration Plane: understand the user's need and clarify missing context.
+- Inspiration Plane: help the user discover what AI can do, shape a useful
+  prompt/workflow, and clarify missing context.
 - Control Plane: review, confirm, and run visible task work.
 - Trust Plane: inspect the result and evidence after execution.
 
@@ -20,6 +21,10 @@ The user describes what they want in ordinary language.
 Plato treats this as the beginning of a work session, not as permission to
 immediately change the workspace.
 
+The user may also be unsure what to ask for. The Inspiration Plane should make
+AI use more approachable by showing possible work patterns and the kind of
+context that will improve the result.
+
 Plane: Inspiration.
 
 ## 2. Clarify And Shape
@@ -27,8 +32,9 @@ Plane: Inspiration.
 If the goal is ambiguous, incomplete, risky, or missing constraints, Plato
 should ask focused questions before planning.
 
-This step is the core of the Inspiration Plane. It is where Plato learns what
-the user actually needs and makes assumptions visible early.
+This step is the core of the Inspiration Plane. It is where Plato helps the
+user understand how AI can help, learns what the user actually needs, and makes
+assumptions visible early.
 
 ## 3. Draft The TaskTree
 
@@ -85,5 +91,6 @@ intent -> clarification -> task structure -> review -> execution -> outcome -> n
 ```
 
 The next product emphasis is improving the beginning of this loop. A stronger
-Inspiration Plane helps Plato understand the user earlier, which makes the
-Control Plane less noisy and the Trust Plane more meaningful.
+Inspiration Plane helps users learn how to work with AI and helps Plato
+understand the user earlier, which makes the Control Plane less noisy and the
+Trust Plane more meaningful.

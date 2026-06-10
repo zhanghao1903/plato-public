@@ -12,8 +12,9 @@ work, control execution, and inspect evidence afterward.
 Most AI tools make the conversation the main object. Plato makes the task the
 main object, and organizes the product around three planes:
 
-- Inspiration Plane: understand the user's need, clarify missing context, and
-  shape fuzzy intent into work that can be planned.
+- Inspiration Plane: help the user discover what AI can do, learn how to use
+  AI through better prompts and workflows, clarify missing context, and shape
+  fuzzy intent into work that can be planned.
 - Control Plane: show the plan, task state, confirmations, running work, and
   result actions in one action-oriented surface.
 - Trust Plane: keep outcomes, file changes, audit evidence, and diagnostics
@@ -29,9 +30,10 @@ User intent
 ```
 
 The three planes exist because intelligent work fails in three different ways:
-the system can misunderstand the user, the user can lose control during
-execution, or the result can be hard to trust afterward. Plato treats those as
-separate product responsibilities instead of hiding all of them in chat.
+the user may not know how AI can help or how to ask, the user can lose control
+during execution, or the result can be hard to trust afterward. Plato treats
+those as separate product responsibilities instead of hiding all of them in
+chat.
 
 ## Current Public Release
 
@@ -66,17 +68,19 @@ See [macOS local release usage](docs/usage/macos-local-release.md).
 
 ## Product Planes
 
-![Plato three product planes](assets/images/plato-three-planes.svg)
+![Plato three product planes](assets/images/plato-three-planes-generated.png)
 
 | Plane | User question | Product role |
 |---|---|---|
-| Inspiration Plane | What am I trying to accomplish, and what does Plato understand? | Turns fuzzy goals into clarified, draftable work. |
+| Inspiration Plane | What can AI help me do, how should I use it, and what does Plato understand? | Helps users discover AI use cases, choose better prompt/workflow paths, and turn fuzzy goals into clarified, draftable work. |
 | Control Plane | What work will happen, what is running, and what needs me? | Keeps plan, status, confirmation, and result actions visible. |
 | Trust Plane | What happened, why, and what evidence exists? | Makes results, file changes, and audit evidence inspectable. |
 
-The next product emphasis is the Inspiration Plane. This is where Plato first
-learns what the user actually needs, asks for missing context, and decides
-whether a goal is ready to become a task structure.
+The next product emphasis is the Inspiration Plane. This is where Plato should
+help users understand what AI can do for them, how to shape prompts and
+workflows, what context is missing, and whether a goal is ready to become a
+task structure. This is also the least developed part of the current public
+product story.
 
 ## Task-First Loop
 
