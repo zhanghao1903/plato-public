@@ -14,6 +14,7 @@ documentation and asset surface, not a source-code mirror.
 - Pull/fetch first and verify the source worktree is clean except intended release fixes.
 - Confirm the public repo checkout is on `main` and clean before editing release docs.
 - Confirm the release version, target platform, architecture, and feature list.
+- Keep only two public channels visible: Stable and Beta.
 - For beta versions, publish the GitHub release as a pre-release.
 
 ## Version Rules
@@ -54,6 +55,8 @@ For each release, update or create:
 
 - `docs/releases/<version>.md`
 - `docs/zh/releases/<version>.md` when Chinese docs are maintained
+- `docs/product/versions.md`
+- `docs/zh/product/versions.md` when Chinese docs are maintained
 - `releases/<version>/manifest.json`
 - `releases/<version>/SHA256SUMS`
 - current release links in README, quickstart, FAQ, release status, and safety docs
@@ -63,8 +66,15 @@ The release notes must include:
 - the download link;
 - SHA256 checksum;
 - added features;
+- links from every added feature to user, product, architecture, safety, or
+  engineering docs;
+- public-safe screenshots for features whose value depends on visual inspection;
 - validation commands or validation summary;
 - known caveats such as unsigned, not notarized, platform limits, and source-mirror limits.
+
+When replacing an existing release asset, also update the GitHub Release body
+from the edited release notes and verify the uploaded asset digest matches
+`SHA256SUMS`.
 
 ## Public Safety Checks
 
@@ -90,3 +100,18 @@ gh release create "v${VERSION}" "${DMG_PATH}" \
 
 Use `--prerelease` for beta builds. After publishing, verify GitHub's asset
 digest, size, tag, target branch, and release URL against `manifest.json`.
+
+For an existing tag, replace the asset and notes instead of creating a second
+release:
+
+```bash
+VERSION=1.1-beta
+DMG_PATH="/path/to/private/source/frontend/dist-electron-installer/Plato-${VERSION}-macos-arm64.dmg"
+gh release upload "v${VERSION}" "${DMG_PATH}" \
+  --repo zhanghao1903/plato-public \
+  --clobber
+gh release edit "v${VERSION}" \
+  --repo zhanghao1903/plato-public \
+  --notes-file "docs/releases/${VERSION}.md" \
+  --prerelease
+```

@@ -11,17 +11,19 @@ task, asks for confirmation when needed, and keeps an audit trail afterward.
 
 ## Try Plato
 
-Current public release: `1.1-beta` for macOS Apple Silicon.
+Public release channels for macOS Apple Silicon:
 
-- [Download Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
+- Stable: [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- Beta: [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
+- [Version comparison](docs/product/versions.md)
 - [Quickstart](docs/usage/quickstart.md)
 - [User guide](docs/usage/user-guide.md)
 - [FAQ](docs/usage/faq.md)
 - [中文文档](docs/zh/README.md)
 - [Release notes](docs/releases/1.1-beta.md)
 
-Important: `1.1-beta` is an unsigned and non-notarized local beta release.
-macOS may require opening it from Finder with the contextual Open action. See
+Important: both public channels are unsigned and non-notarized local releases.
+macOS may require opening from Finder with the contextual Open action. See
 [macOS local release usage](docs/usage/macos-local-release.md).
 
 ## Why Plato
@@ -139,27 +141,28 @@ thesis.
 - [Architecture overview](docs/architecture/overview.md): public system shape.
 - [Trust and audit](docs/architecture/trust-and-audit.md): how Plato earns user
   trust after work happens.
+- [Version comparison](docs/product/versions.md): stable vs beta capabilities.
 - [Release notes](docs/releases/1.1-beta.md): what shipped in the public
   `1.1-beta` local beta release.
 
-## Current Public Release
+## Public Version Channels
 
-Version: `1.1-beta`
+| Channel | Version | Best for | Download |
+|---|---:|---|---|
+| Stable | `0.1.0` | Conservative public baseline for the task-first product loop. | [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg) |
+| Beta | `1.1-beta` | Latest Product 1.1 inspection foundations. | [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg) |
 
 Platform: macOS Apple Silicon (`macos-arm64`)
 
-Download:
-
-- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
-
-Integrity:
+Beta integrity:
 
 ```text
-39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
+777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 Release metadata:
 
+- [Version comparison](docs/product/versions.md)
 - [manifest.json](releases/1.1-beta/manifest.json)
 - [SHA256SUMS](releases/1.1-beta/SHA256SUMS)
 

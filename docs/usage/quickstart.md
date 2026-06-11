@@ -4,18 +4,21 @@ This is the shortest path from download to a first useful Plato session.
 
 ## 1. Download The Local Beta
 
-Download the current macOS Apple Silicon asset:
+Download the current beta macOS Apple Silicon asset:
 
 - [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 Optional checksum:
 
 ```text
-39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
+777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 The release is unsigned and non-notarized. If macOS blocks the first launch,
 see [macOS local release usage](macos-local-release.md).
+
+If you need the stable baseline instead, see
+[Public versions](../product/versions.md).
 
 ## 2. Open Plato
 
@@ -98,6 +101,7 @@ Read next:
 
 - [User guide](user-guide.md)
 - [FAQ](faq.md)
+- [Public versions](../product/versions.md)
 - [Release status](../product/release-status.md)
 - [Privacy and safety](../security/privacy-and-safety.md)
 - [1.1-beta release notes](../releases/1.1-beta.md)

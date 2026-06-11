@@ -96,10 +96,21 @@ Check:
 - task status and failure details;
 - audit evidence when you need to know what happened and why.
 
+In the `1.1-beta` channel, also check the Product 1.1 inspection foundations:
+
+- token usage summaries after AI-backed activity;
+- workspace inspection for git status, diffs, and file viewing;
+- evidence-backed file operation details when precision file tools were used.
+
 The Audit Page is the trust surface. It is for reviewing evidence, not for
 controlling tasks.
 
 ![Plato Audit Page](../../assets/screenshots/plato-audit-page.png)
+
+Workspace inspection uses public-safe path labels in screenshots and release
+docs:
+
+![Plato Workspace Inspection](../../assets/screenshots/plato-workspace-inspection.png)
 
 ## 6. Continue, Revise, Or Stop
 
@@ -113,7 +124,8 @@ After a result, choose the next move:
 
 ## Current Release Notes
 
-The current public release is an unsigned and non-notarized macOS local release
-candidate. Some screenshots may show product direction or public-safe sample
-flows that should be checked against [Release status](../product/release-status.md)
-before being treated as available in a specific release.
+The public channels are unsigned and non-notarized macOS local releases. Some
+screenshots may show product direction or public-safe sample flows that should
+be checked against [Public versions](../product/versions.md) and
+[Release status](../product/release-status.md) before being treated as
+available in a specific release.

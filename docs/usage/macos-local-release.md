@@ -1,10 +1,10 @@
 # macOS Local Release Usage
 
-This page explains how to use the current public macOS local beta release.
+This page explains how to use the public macOS local releases.
 
 ## Download
 
-Download the latest public asset:
+Download the latest beta asset:
 
 - [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
@@ -13,7 +13,7 @@ Download the latest public asset:
 Verify the checksum if needed:
 
 ```text
-39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
+777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 ## Open
@@ -35,8 +35,9 @@ After opening Plato, see the [user guide](user-guide.md) for the basic product
 loop.
 
 If this is your first time trying Plato, start with the
-[Quickstart](quickstart.md). For release safety questions, see the
-[FAQ](faq.md) and [Privacy and safety](../security/privacy-and-safety.md).
+[Quickstart](quickstart.md). For stable/beta differences, see
+[Public versions](../product/versions.md). For release safety questions, see
+the [FAQ](faq.md) and [Privacy and safety](../security/privacy-and-safety.md).
 
 ## Troubleshooting
 

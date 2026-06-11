@@ -4,18 +4,19 @@
 
 ## 1. 下载本地 beta 版本
 
-当前公开下载版本：
+当前 beta 下载版本：
 
 - [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 可选校验值：
 
 ```text
-39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
+777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 当前版本未签名、未公证。如果 macOS 拦截启动，请参考英文文档
 [macOS local release usage](../../usage/macos-local-release.md)。
+如果你需要 stable 基线版本，请查看 [公开版本](../product/versions.md)。
 
 ## 2. 打开 Plato
 
@@ -94,5 +95,6 @@ ASK 出现时，表示 Plato 缺少应该由你提供的信息，而且不应该
 下一步阅读：
 
 - [常见问题](faq.md)
+- [公开版本](../product/versions.md)
 - [隐私与安全](../security/privacy-and-safety.md)
 - [1.1-beta 发布说明](../releases/1.1-beta.md)

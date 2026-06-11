@@ -7,8 +7,8 @@ but it is not a formally audited or app-store-distributed product.
 
 ## Local-First Evaluation
 
-The current public release runs as a local desktop app with a bundled sidecar
-runtime candidate.
+The public release channels run as local desktop apps with bundled sidecar
+runtime candidates.
 
 Practical guidance:
 

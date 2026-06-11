@@ -1,9 +1,15 @@
 # Release Status
 
-This repository currently publishes the Plato `1.1-beta` macOS Apple Silicon
-local beta release.
+This repository publishes two public macOS Apple Silicon channels:
 
-## Latest Public Release
+| Channel | Current version | Role | Release notes |
+|---|---:|---|---|
+| Stable | `0.1.0` | Conservative public baseline for the task-first product loop. | [0.1.0 notes](../releases/0.1.0.md) |
+| Beta | `1.1-beta` | Latest Product 1.1 inspection foundations. | [1.1-beta notes](../releases/1.1-beta.md) |
+
+For a feature-by-feature comparison, see [Public versions](versions.md).
+
+## Latest Beta Release
 
 | Field | Value |
 |---|---|
@@ -22,7 +28,7 @@ Download:
 Checksum:
 
 ```text
-39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
+777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 Metadata:
@@ -31,10 +37,10 @@ Metadata:
 - [SHA256SUMS](../../releases/1.1-beta/SHA256SUMS)
 - [Human-readable release notes](../releases/1.1-beta.md)
 
-## What This Release Is
+## What The Beta Release Is
 
-This release is a local beta for early evaluation of the Plato desktop
-experience and the Product 1.1 inspection foundations.
+The beta channel is for early evaluation of the Plato desktop experience and
+the Product 1.1 inspection foundations.
 
 It is intended to make the product loop visible:
 
@@ -42,16 +48,28 @@ It is intended to make the product loop visible:
 goal -> task structure -> execution -> result -> audit
 ```
 
-It also exposes these Product 1.1 additions:
+Compared with stable `0.1.0`, beta `1.1-beta` adds:
 
-- token usage analytics for local sessions and workspace summaries;
-- precision file tool foundations for line-range reads, search, guarded edits,
-  append operations, and changed-line evidence;
-- workspace inspection for git status, structured diffs, and file viewer paths.
+- [token usage analytics](../releases/1.1-beta.md#token-usage-analytics) for
+  local sessions and workspace summaries;
+- [precision file tool foundations](../releases/1.1-beta.md#precision-file-tools)
+  for line-range reads, search, guarded edits, append operations, and
+  changed-line evidence;
+- [workspace inspection](../architecture/trust-and-audit.md#workspace-inspection-direction)
+  for git status, structured diffs, and file viewer paths.
 
-## What This Release Is Not
+## Stable Baseline
 
-This release is not:
+The stable channel is currently `0.1.0`. It is the conservative public baseline
+for reviewing Plato's task-first model, visible task plan, ASK direction, Main
+Page control surface, and Audit Page trust surface.
+
+Stable is still an unsigned, non-notarized local release. It is stable relative
+to the public beta channel, not a signed app-store-quality distribution.
+
+## What Public Releases Are Not
+
+The public channels are not:
 
 - signed or notarized for normal macOS distribution;
 - a source-code mirror;

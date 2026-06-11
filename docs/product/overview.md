@@ -171,10 +171,12 @@ multi-agent marketplace, or a source-code distribution.
 
 ## Current Release Status
 
-The current public release is `1.1-beta`, an unsigned and non-notarized macOS
-Apple Silicon local beta release.
+The public repository maintains two release channels: Stable `0.1.0` and Beta
+`1.1-beta`. Both are unsigned and non-notarized macOS Apple Silicon local
+releases.
 
-For exact release metadata, see [Release status](release-status.md).
+For feature differences, see [Public versions](versions.md). For exact release
+metadata, see [Release status](release-status.md).
 
 ## Public Screenshots
 
