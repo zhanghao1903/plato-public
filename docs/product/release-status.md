@@ -29,6 +29,7 @@ Metadata:
 
 - [manifest.json](../../releases/0.1.0/manifest.json)
 - [SHA256SUMS](../../releases/0.1.0/SHA256SUMS)
+- [Human-readable release notes](../releases/0.1.0.md)
 
 ## What This Release Is
 
@@ -59,3 +60,6 @@ normal opening.
 
 See [macOS local release usage](../usage/macos-local-release.md) for the
 recommended local opening path.
+
+For data, logs, and local workspace safety notes, see
+[Privacy and safety](../security/privacy-and-safety.md).

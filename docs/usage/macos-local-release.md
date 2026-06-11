@@ -34,6 +34,10 @@ and use Finder's contextual Open action if Gatekeeper blocks the first launch.
 After opening Plato, see the [user guide](user-guide.md) for the basic product
 loop.
 
+If this is your first time trying Plato, start with the
+[Quickstart](quickstart.md). For release safety questions, see the
+[FAQ](faq.md) and [Privacy and safety](../security/privacy-and-safety.md).
+
 ## Troubleshooting
 
 If the app does not open:

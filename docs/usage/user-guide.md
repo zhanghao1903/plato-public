@@ -5,6 +5,11 @@ This guide explains Plato in user language.
 Plato is for work where you know the outcome you want, but you may not know the
 best way to ask AI, split the work, confirm risky steps, or check the result.
 
+If you want the shortest path first, start with the
+[Quickstart](quickstart.md). If you are unsure what is safe in the current
+release, read the [FAQ](faq.md) and
+[Privacy and safety](../security/privacy-and-safety.md).
+
 ## 1. Start With The Outcome
 
 Begin by describing what you want to accomplish.

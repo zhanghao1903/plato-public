@@ -1,0 +1,19 @@
+name: Question
+description: Ask a question about the public Plato release or docs.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to understand?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link the doc, screenshot, release, or behavior that prompted the question.
+    validations:
+      required: false
