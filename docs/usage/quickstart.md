@@ -11,7 +11,7 @@ Download the current beta macOS Apple Silicon asset:
 Optional checksum:
 
 ```text
-777d8de0fa9c0bbb1a98c360b37cf691928b5403e13b9d81478758ce7c0b84b6  Plato-1.1-beta-macos-arm64.dmg
+d8c71d1c1d06a99ca1598bd4dda09785efc4d4a6113f034a56b7803445a9bbdc  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 The release is unsigned and non-notarized. If macOS blocks the first launch,
