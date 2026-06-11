@@ -23,7 +23,7 @@ test for engineers.
 
 ## 2. Local Desktop App With Bundled Sidecar
 
-The `0.1.0` public release packages a desktop UI with a bundled Python sidecar
+The `1.1-beta` public release packages a desktop UI with a bundled Python sidecar
 runtime candidate.
 
 Why this matters:

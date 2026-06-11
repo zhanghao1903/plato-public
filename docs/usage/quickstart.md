@@ -2,16 +2,16 @@
 
 This is the shortest path from download to a first useful Plato session.
 
-## 1. Download The Local Release Candidate
+## 1. Download The Local Beta
 
 Download the current macOS Apple Silicon asset:
 
-- [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 Optional checksum:
 
 ```text
-34bc9a24dbf29c8ba5ebdeb1d92a4428d55e791562596e4303734b493fdfb212  Plato-0.1.0-macos-arm64.dmg
+39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 The release is unsigned and non-notarized. If macOS blocks the first launch,
@@ -21,7 +21,7 @@ see [macOS local release usage](macos-local-release.md).
 
 Mount the DMG and open Plato.
 
-On first use, treat the app as a local release candidate:
+On first use, treat the app as a local beta:
 
 - use a test workspace first;
 - avoid sensitive files until you understand the flow;
@@ -78,12 +78,13 @@ After work happens, inspect:
 - result summary;
 - changed files, when available;
 - Audit Page evidence.
+- workspace inspection for git status, file viewing, and diffs.
 
 ![Plato Audit Page](../../assets/screenshots/plato-audit-page.png)
 
 ## 7. Know The Current Limits
 
-The `0.1.0` public release is useful for early evaluation, but it is not a
+The `1.1-beta` public release is useful for early evaluation, but it is not a
 fully polished public distribution.
 
 Current caveats:
@@ -99,3 +100,4 @@ Read next:
 - [FAQ](faq.md)
 - [Release status](../product/release-status.md)
 - [Privacy and safety](../security/privacy-and-safety.md)
+- [1.1-beta release notes](../releases/1.1-beta.md)

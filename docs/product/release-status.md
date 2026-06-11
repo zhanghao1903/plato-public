@@ -1,46 +1,53 @@
 # Release Status
 
-This repository currently publishes the Plato `0.1.0` macOS Apple Silicon
-local release candidate.
+This repository currently publishes the Plato `1.1-beta` macOS Apple Silicon
+local beta release.
 
 ## Latest Public Release
 
 | Field | Value |
 |---|---|
-| Version | `0.1.0` |
+| Version | `1.1-beta` |
 | Platform | macOS |
 | Architecture | Apple Silicon / `arm64` |
-| Asset | `Plato-0.1.0-macos-arm64.dmg` |
+| Asset | `Plato-1.1-beta-macos-arm64.dmg` |
 | Runtime | Bundled Python sidecar candidate |
 | Signed | No |
 | Notarized | No |
 
 Download:
 
-- [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 Checksum:
 
 ```text
-34bc9a24dbf29c8ba5ebdeb1d92a4428d55e791562596e4303734b493fdfb212  Plato-0.1.0-macos-arm64.dmg
+39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 Metadata:
 
-- [manifest.json](../../releases/0.1.0/manifest.json)
-- [SHA256SUMS](../../releases/0.1.0/SHA256SUMS)
-- [Human-readable release notes](../releases/0.1.0.md)
+- [manifest.json](../../releases/1.1-beta/manifest.json)
+- [SHA256SUMS](../../releases/1.1-beta/SHA256SUMS)
+- [Human-readable release notes](../releases/1.1-beta.md)
 
 ## What This Release Is
 
-This release is a local release candidate for early evaluation of the Plato
-desktop experience.
+This release is a local beta for early evaluation of the Plato desktop
+experience and the Product 1.1 inspection foundations.
 
 It is intended to make the product loop visible:
 
 ```text
 goal -> task structure -> execution -> result -> audit
 ```
+
+It also exposes these Product 1.1 additions:
+
+- token usage analytics for local sessions and workspace summaries;
+- precision file tool foundations for line-range reads, search, guarded edits,
+  append operations, and changed-line evidence;
+- workspace inspection for git status, structured diffs, and file viewer paths.
 
 ## What This Release Is Not
 
@@ -49,9 +56,8 @@ This release is not:
 - signed or notarized for normal macOS distribution;
 - a source-code mirror;
 - a public marketplace for agents or skills;
-- a promise that every roadmap item in the docs is available in `0.1.0`.
-- a promise that workspace inspection screenshots represent an available
-  `0.1.0` release feature.
+- a promise that every roadmap item in the docs is available in `1.1-beta`.
+- a signed, notarized, auto-updating, or marketplace-ready release.
 
 ## Opening On macOS
 

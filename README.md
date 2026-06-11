@@ -11,16 +11,16 @@ task, asks for confirmation when needed, and keeps an audit trail afterward.
 
 ## Try Plato
 
-Current public release: `0.1.0` for macOS Apple Silicon.
+Current public release: `1.1-beta` for macOS Apple Silicon.
 
-- [Download Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Download Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 - [Quickstart](docs/usage/quickstart.md)
 - [User guide](docs/usage/user-guide.md)
 - [FAQ](docs/usage/faq.md)
 - [中文文档](docs/zh/README.md)
-- [Release notes](docs/releases/0.1.0.md)
+- [Release notes](docs/releases/1.1-beta.md)
 
-Important: `0.1.0` is an unsigned and non-notarized local release candidate.
+Important: `1.1-beta` is an unsigned and non-notarized local beta release.
 macOS may require opening it from Finder with the contextual Open action. See
 [macOS local release usage](docs/usage/macos-local-release.md).
 
@@ -54,13 +54,17 @@ Read the deeper model in [Task-first workflow](docs/product/task-first-workflow.
 
 ## What You Can Try Today
 
-The current local release is best for early evaluation of the task-first loop:
+The current local beta is best for evaluating the task-first loop and the new
+Product 1.1 inspection surfaces:
 
 - turn a rough goal into a reviewable task plan;
 - inspect task status and current activity;
 - answer user-owned questions instead of letting the system guess;
 - open a read-only Audit Page to understand evidence and traceability;
-- explore public-safe examples of workspace inspection and trust surfaces.
+- review token usage analytics for local sessions and workspaces;
+- use workspace inspection for git status, file diffs, and file viewing;
+- rely on precision file tool foundations for line-range reads, search,
+  hash-guarded replacements, and evidence-backed file operations.
 
 For concrete examples, see [Use cases](docs/product/use-cases.md).
 
@@ -94,13 +98,13 @@ guessing.
 The Audit Page is a read-only trust surface for evidence, diagnostics, and
 traceability.
 
-### Workspace Inspection Preview
+### Workspace Inspection
 
 ![Plato Workspace Inspection](assets/screenshots/plato-workspace-inspection.png)
 
 Workspace inspection shows repository status and file-level inspection links
-using renderer-safe path labels. Check [Release status](docs/product/release-status.md)
-before treating this surface as available in a specific public release.
+using renderer-safe path labels. In `1.1-beta`, the public release includes
+git status, structured diff, and file viewer paths for local workspaces.
 
 ## Product Model
 
@@ -135,29 +139,29 @@ thesis.
 - [Architecture overview](docs/architecture/overview.md): public system shape.
 - [Trust and audit](docs/architecture/trust-and-audit.md): how Plato earns user
   trust after work happens.
-- [Release notes](docs/releases/0.1.0.md): what shipped in the public `0.1.0`
-  local release candidate.
+- [Release notes](docs/releases/1.1-beta.md): what shipped in the public
+  `1.1-beta` local beta release.
 
 ## Current Public Release
 
-Version: `0.1.0`
+Version: `1.1-beta`
 
 Platform: macOS Apple Silicon (`macos-arm64`)
 
 Download:
 
-- [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 Integrity:
 
 ```text
-34bc9a24dbf29c8ba5ebdeb1d92a4428d55e791562596e4303734b493fdfb212  Plato-0.1.0-macos-arm64.dmg
+39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 Release metadata:
 
-- [manifest.json](releases/0.1.0/manifest.json)
-- [SHA256SUMS](releases/0.1.0/SHA256SUMS)
+- [manifest.json](releases/1.1-beta/manifest.json)
+- [SHA256SUMS](releases/1.1-beta/SHA256SUMS)
 
 Status notes:
 
@@ -191,6 +195,7 @@ assets/
   screenshots/   Public-safe UI screenshots.
 releases/
   0.1.0/         Machine-readable manifest and checksum files.
+  1.1-beta/      Machine-readable manifest and checksum files.
 ```
 
 ![Plato public docs map](assets/images/plato-public-docs-map.svg)

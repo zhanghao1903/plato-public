@@ -2,7 +2,7 @@
 
 This page explains the current public safety posture in plain language.
 
-Plato `0.1.0` is an early local release candidate. It is useful for evaluation,
+Plato `1.1-beta` is an early local beta release. It is useful for evaluation,
 but it is not a formally audited or app-store-distributed product.
 
 ## Local-First Evaluation
@@ -61,13 +61,17 @@ logs.
 
 ## Current Distribution Caveats
 
-The `0.1.0` release is:
+The `1.1-beta` release is:
 
 - unsigned;
 - non-notarized;
 - intended for local evaluation;
 - not a formal security release;
 - not a promise that every public screenshot is available as a stable feature.
+
+It adds token usage analytics, precision file tool foundations, and workspace
+inspection, but those features should still be evaluated in non-sensitive test
+workspaces first.
 
 See [Release status](../product/release-status.md).
 

@@ -166,13 +166,13 @@ Plato prioritizes:
 - audit evidence for trust and debugging;
 - local-first execution for early releases.
 
-Plato does not position the `0.1.0` release as a broad autonomous worker, a
+Plato does not position the `1.1-beta` release as a broad autonomous worker, a
 multi-agent marketplace, or a source-code distribution.
 
 ## Current Release Status
 
-The current public release is `0.1.0`, an unsigned and non-notarized macOS
-Apple Silicon local release candidate.
+The current public release is `1.1-beta`, an unsigned and non-notarized macOS
+Apple Silicon local beta release.
 
 For exact release metadata, see [Release status](release-status.md).
 

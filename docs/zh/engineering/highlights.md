@@ -19,7 +19,7 @@ Plato 把任务视为用户可见的工作契约。
 
 ## 2. 本地桌面 App 与 Sidecar Runtime
 
-`0.1.0` 公开版本将桌面 UI 和 Python sidecar runtime candidate 打包在一起。
+`1.1-beta` 公开版本将桌面 UI 和 Python sidecar runtime candidate 打包在一起。
 
 这说明：
 

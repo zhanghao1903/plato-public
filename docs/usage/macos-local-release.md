@@ -1,31 +1,31 @@
 # macOS Local Release Usage
 
-This page explains how to use the current public macOS local release candidate.
+This page explains how to use the current public macOS local beta release.
 
 ## Download
 
 Download the latest public asset:
 
-- [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 ![Plato macOS local release](../../assets/images/plato-macos-local-release.svg)
 
 Verify the checksum if needed:
 
 ```text
-34bc9a24dbf29c8ba5ebdeb1d92a4428d55e791562596e4303734b493fdfb212  Plato-0.1.0-macos-arm64.dmg
+39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 ## Open
 
-The `0.1.0` release is unsigned and non-notarized.
+The `1.1-beta` release is unsigned and non-notarized.
 
 macOS may block a normal double-click open. For local evaluation, mount the DMG
 and use Finder's contextual Open action if Gatekeeper blocks the first launch.
 
 ## Status Caveats
 
-- The app is a local release candidate.
+- The app is a local beta release.
 - The package includes a bundled Python sidecar runtime candidate.
 - Signing and notarization are not complete for this release.
 - The public repository hosts release metadata and public docs, not private

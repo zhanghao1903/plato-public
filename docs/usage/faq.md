@@ -21,16 +21,16 @@ The goal is not only to get an answer. The goal is to make work visible:
 
 ## Is Plato Ready For Everyday Non-Technical Users?
 
-Not yet as a polished public product. The current `0.1.0` build is a local
-release candidate for early evaluation.
+Not yet as a polished public product. The current `1.1-beta` build is a local
+beta release for early evaluation.
 
 It is designed to show the product direction and working loop, but it still has
 rough edges such as unsigned macOS packaging and evolving UI details.
 
 ## Why Does macOS Warn Me When Opening The App?
 
-The `0.1.0` release is unsigned and non-notarized. macOS Gatekeeper may block a
-normal double-click launch.
+The `1.1-beta` release is unsigned and non-notarized. macOS Gatekeeper may
+block a normal double-click launch.
 
 See [macOS local release usage](macos-local-release.md) for the local opening
 path.
@@ -42,6 +42,9 @@ workflows may involve file changes, but the product direction is to show tasks,
 ask for confirmation when needed, and make changes inspectable afterward.
 
 For early testing, use a non-sensitive test workspace.
+
+The `1.1-beta` release adds workspace inspection paths for git status,
+structured diffs, and file viewing so file-related work is easier to review.
 
 ## What Is An ASK?
 

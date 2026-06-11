@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "plato.public_release.v1",
+  "appName": "Plato",
+  "version": "1.1-beta",
+  "platform": "macos",
+  "arch": "arm64",
+  "asset": "Plato-1.1-beta-macos-arm64.dmg",
+  "assetDownloadUrl": "https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg",
+  "assetSizeBytes": 445046019,
+  "sha256": "39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec",
+  "signed": false,
+  "notarized": false,
+  "runtimeKind": "bundled-python",
+  "sourceRepository": "zhanghao1903/Taskweavn",
+  "sourceBranch": "main",
+  "sourceCommit": "c88559594d0b91f88ca65f07bb0a93366568f14a",
+  "sourcePullRequest": null,
+  "createdAt": "2026-06-11T01:12:52Z"
+}

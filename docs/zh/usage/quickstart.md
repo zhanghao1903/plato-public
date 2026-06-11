@@ -2,16 +2,16 @@
 
 这是一条最短路径：从下载 Plato 到完成第一个可评估的任务计划。
 
-## 1. 下载本地候选版本
+## 1. 下载本地 beta 版本
 
 当前公开下载版本：
 
-- [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 
 可选校验值：
 
 ```text
-34bc9a24dbf29c8ba5ebdeb1d92a4428d55e791562596e4303734b493fdfb212  Plato-0.1.0-macos-arm64.dmg
+39e70ce0d356e4d05bd02280402480fe6fb3aa49bdbe072fd387fbe51fd562ec  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 当前版本未签名、未公证。如果 macOS 拦截启动，请参考英文文档
@@ -75,13 +75,14 @@ ASK 出现时，表示 Plato 缺少应该由你提供的信息，而且不应该
 - 任务状态；
 - 结果摘要；
 - 文件变化；
-- Audit Page 中的证据。
+- Audit Page 中的证据；
+- workspace inspection 中的 Git 状态、文件查看和 diff。
 
 ![Plato Audit Page](../../../assets/screenshots/plato-audit-page.png)
 
 ## 7. 理解当前限制
 
-`0.1.0` 公开版本适合早期评估，但不是正式完整发行版。
+`1.1-beta` 公开版本适合早期评估，但不是正式完整发行版。
 
 当前限制：
 
@@ -94,4 +95,4 @@ ASK 出现时，表示 Plato 缺少应该由你提供的信息，而且不应该
 
 - [常见问题](faq.md)
 - [隐私与安全](../security/privacy-and-safety.md)
-- [0.1.0 发布说明](../releases/0.1.0.md)
+- [1.1-beta 发布说明](../releases/1.1-beta.md)
