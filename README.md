@@ -157,7 +157,7 @@ Platform: macOS Apple Silicon (`macos-arm64`)
 Beta integrity:
 
 ```text
-d8c71d1c1d06a99ca1598bd4dda09785efc4d4a6113f034a56b7803445a9bbdc  Plato-1.1-beta-macos-arm64.dmg
+bdf1d719546c84569dae4c6610ed9a609acb77c971d00a938ff59c6510caa6e1  Plato-1.1-beta-macos-arm64.dmg
 ```
 
 Release metadata:
