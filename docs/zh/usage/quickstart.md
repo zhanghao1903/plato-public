@@ -65,7 +65,7 @@ ASK 出现时，表示 Plato 缺少应该由你提供的信息，而且不应该
 - Authoring ASK：计划生成前，Plato 需要补足目标或约束。
 - Execution ASK：执行中，某个任务缺少信息，需要暂停等待你回答。
 
-![Plato Authoring ASK](../../../assets/screenshots/plato-authoring-ask.svg)
+![Plato Authoring ASK](../../../assets/screenshots/plato-authoring-ask.png)
 
 ## 6. 发布并检查
 

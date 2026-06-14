@@ -69,7 +69,7 @@ guessed.
 - Authoring ASK appears before a plan is ready.
 - Execution ASK appears when a task is blocked during work.
 
-![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.svg)
+![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.png)
 
 ## 6. Publish And Inspect
 

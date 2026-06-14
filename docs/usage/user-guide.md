@@ -58,7 +58,7 @@ Useful context can include:
 When Plato needs this information before it can build a useful plan, it should
 ask you directly. This is an Authoring ASK.
 
-![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.svg)
+![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.png)
 
 ## 3. Review The Plan
 
@@ -97,7 +97,7 @@ not guess.
 During execution, Plato may ask a task-scoped question before continuing. This
 is an Execution ASK. Answer it from the task detail panel.
 
-![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.svg)
+![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.png)
 
 ## 5. Inspect The Result
 

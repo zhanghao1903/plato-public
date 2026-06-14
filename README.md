@@ -83,12 +83,12 @@ status, and open audit.
 
 ### ASK: When Plato Needs The User
 
-![Plato authoring ask](assets/screenshots/plato-authoring-ask.svg)
+![Plato authoring ask](assets/screenshots/plato-authoring-ask.png)
 
 An Authoring ASK appears before the plan exists, when Plato needs context that
 belongs to the user.
 
-![Plato execution ask](assets/screenshots/plato-execution-ask.svg)
+![Plato execution ask](assets/screenshots/plato-execution-ask.png)
 
 An Execution ASK appears during task work, when a task should pause instead of
 guessing.

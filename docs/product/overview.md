@@ -114,12 +114,12 @@ information that belongs to the user and should not guess.
 Authoring ASK belongs to the Inspiration Plane. It helps users clarify goals,
 constraints, examples, and preferences before work becomes a plan.
 
-![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.svg)
+![Plato Authoring ASK](../../assets/screenshots/plato-authoring-ask.png)
 
 Execution ASK belongs to the Control Plane. It keeps the TaskTree visible while
 one task waits for user-owned information.
 
-![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.svg)
+![Plato Execution ASK](../../assets/screenshots/plato-execution-ask.png)
 
 ## Why Three Planes
 

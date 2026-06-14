@@ -47,7 +47,7 @@ Plato 不应该把你的第一句话直接当作执行许可。
 
 当 Plato 需要这些信息才能制定有用计划时，它应该直接提问。这类问题是 Authoring ASK。
 
-![Plato Authoring ASK](../../../assets/screenshots/plato-authoring-ask.svg)
+![Plato Authoring ASK](../../../assets/screenshots/plato-authoring-ask.png)
 
 ## 3. 检查计划
 
@@ -82,7 +82,7 @@ ASK 和 confirmation 不一样。confirmation 表示 Plato 知道要做什么，
 
 执行过程中，Plato 也可能在某个任务里提出问题。这是 Execution ASK，需要你在任务详情面板中回答。
 
-![Plato Execution ASK](../../../assets/screenshots/plato-execution-ask.svg)
+![Plato Execution ASK](../../../assets/screenshots/plato-execution-ask.png)
 
 ## 5. 检查结果
 
