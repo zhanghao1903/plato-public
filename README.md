@@ -131,8 +131,8 @@ thesis.
 - [Privacy and safety](docs/security/privacy-and-safety.md): what the current
   local release does and does not guarantee.
 - [Release status](docs/product/release-status.md): exact public release caveats.
-- [中文文档](docs/zh/README.md): Chinese quickstart, FAQ, use cases, safety, and
-  release notes.
+- [中文文档](docs/zh/README.md): Chinese quickstart, user guide, FAQ, use
+  cases, safety, and release notes.
 
 ## For Reviewers
 

@@ -94,6 +94,7 @@ ASK 出现时，表示 Plato 缺少应该由你提供的信息，而且不应该
 
 下一步阅读：
 
+- [用户指南](user-guide.md)
 - [常见问题](faq.md)
 - [公开版本](../product/versions.md)
 - [隐私与安全](../security/privacy-and-safety.md)

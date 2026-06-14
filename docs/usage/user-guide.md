@@ -10,6 +10,20 @@ If you want the shortest path first, start with the
 release, read the [FAQ](faq.md) and
 [Privacy and safety](../security/privacy-and-safety.md).
 
+## Watch The Walkthrough Videos
+
+These public videos show the same user path in a more visual form:
+
+| Step | Video |
+|---|---|
+| Install Plato | [Plato installation video](https://www.bilibili.com/video/BV1F3JW6QEqw) |
+| Create and review a plan | [Plan creation walkthrough](https://www.bilibili.com/video/BV19SJs6yE3q) |
+| Run tasks and inspect execution | [Task execution walkthrough](https://www.bilibili.com/video/BV1zJJN6YE6N/) |
+
+The videos are hosted on Bilibili. GitHub Markdown does not render Bilibili
+iframe players, so use the links above to watch them. If you prefer text first,
+continue with the guide below.
+
 ## 1. Start With The Outcome
 
 Begin by describing what you want to accomplish.
