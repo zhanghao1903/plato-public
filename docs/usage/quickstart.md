@@ -6,12 +6,12 @@ This is the shortest path from download to a first useful Plato session.
 
 Download the current beta macOS Apple Silicon asset:
 
-- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
+- [Plato-1.1-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1/Plato-1.1-macos-arm64.dmg)
 
 Optional checksum:
 
 ```text
-bdf1d719546c84569dae4c6610ed9a609acb77c971d00a938ff59c6510caa6e1  Plato-1.1-beta-macos-arm64.dmg
+fd9588592fcc8f0f04322dac8b84038bc3ebd713bdf68cf5a5b1cd4fd76e809e  Plato-1.1-macos-arm64.dmg
 ```
 
 The release is unsigned and non-notarized. If macOS blocks the first launch,
@@ -87,7 +87,7 @@ After work happens, inspect:
 
 ## 7. Know The Current Limits
 
-The `1.1-beta` public release is useful for early evaluation, but it is not a
+The `1.1` public release is useful for local evaluation, but it is not a
 fully polished public distribution.
 
 Current caveats:
@@ -104,4 +104,4 @@ Read next:
 - [Public versions](../product/versions.md)
 - [Release status](../product/release-status.md)
 - [Privacy and safety](../security/privacy-and-safety.md)
-- [1.1-beta release notes](../releases/1.1-beta.md)
+- [1.1 release notes](../releases/1.1.md)

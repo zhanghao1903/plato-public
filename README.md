@@ -13,14 +13,14 @@ task, asks for confirmation when needed, and keeps an audit trail afterward.
 
 Public release channels for macOS Apple Silicon:
 
-- Stable: [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg)
+- Stable: [Plato-1.1-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1/Plato-1.1-macos-arm64.dmg)
 - Beta: [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
 - [Version comparison](docs/product/versions.md)
 - [Quickstart](docs/usage/quickstart.md)
 - [User guide](docs/usage/user-guide.md)
 - [FAQ](docs/usage/faq.md)
 - [中文文档](docs/zh/README.md)
-- [Release notes](docs/releases/1.1-beta.md)
+- [Release notes](docs/releases/1.1.md)
 
 Important: both public channels are unsigned and non-notarized local releases.
 macOS may require opening from Finder with the contextual Open action. See
@@ -56,7 +56,7 @@ Read the deeper model in [Task-first workflow](docs/product/task-first-workflow.
 
 ## What You Can Try Today
 
-The current local beta is best for evaluating the task-first loop and the new
+The current stable release is best for evaluating the task-first loop and the
 Product 1.1 inspection surfaces:
 
 - turn a rough goal into a reviewable task plan;
@@ -105,7 +105,7 @@ traceability.
 ![Plato Workspace Inspection](assets/screenshots/plato-workspace-inspection.png)
 
 Workspace inspection shows repository status and file-level inspection links
-using renderer-safe path labels. In `1.1-beta`, the public release includes
+using renderer-safe path labels. In `1.1`, the public release includes
 git status, structured diff, and file viewer paths for local workspaces.
 
 ## Product Model
@@ -142,35 +142,35 @@ thesis.
 - [Trust and audit](docs/architecture/trust-and-audit.md): how Plato earns user
   trust after work happens.
 - [Version comparison](docs/product/versions.md): stable vs beta capabilities.
-- [Release notes](docs/releases/1.1-beta.md): what shipped in the public
-  `1.1-beta` local beta release.
+- [Release notes](docs/releases/1.1.md): what shipped in the public
+  `1.1` local release.
 
 ## Public Version Channels
 
 | Channel | Version | Best for | Download |
 |---|---:|---|---|
-| Stable | `0.1.0` | Conservative public baseline for the task-first product loop. | [Plato-0.1.0-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v0.1.0/Plato-0.1.0-macos-arm64.dmg) |
-| Beta | `1.1-beta` | Latest Product 1.1 inspection foundations. | [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg) |
+| Stable | `1.1` | Current formal public Product 1.1 release. | [Plato-1.1-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1/Plato-1.1-macos-arm64.dmg) |
+| Beta | `1.1-beta` | Earlier Product 1.1 preview retained for comparison. | [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg) |
 
 Platform: macOS Apple Silicon (`macos-arm64`)
 
-Beta integrity:
+Stable integrity:
 
 ```text
-bdf1d719546c84569dae4c6610ed9a609acb77c971d00a938ff59c6510caa6e1  Plato-1.1-beta-macos-arm64.dmg
+fd9588592fcc8f0f04322dac8b84038bc3ebd713bdf68cf5a5b1cd4fd76e809e  Plato-1.1-macos-arm64.dmg
 ```
 
 Release metadata:
 
 - [Version comparison](docs/product/versions.md)
-- [manifest.json](releases/1.1-beta/manifest.json)
-- [SHA256SUMS](releases/1.1-beta/SHA256SUMS)
+- [manifest.json](releases/1.1/manifest.json)
+- [SHA256SUMS](releases/1.1/SHA256SUMS)
 
 Status notes:
 
 - unsigned and non-notarized;
-- local release candidate, not a polished app-store release;
-- includes a bundled Python sidecar runtime candidate;
+- local release, not a polished app-store release;
+- includes a bundled Python sidecar runtime;
 - this repository hosts release metadata and public docs, not source code.
 
 ## Current Limitations
@@ -197,8 +197,9 @@ assets/
   images/        Product and architecture diagrams.
   screenshots/   Public-safe UI screenshots.
 releases/
-  0.1.0/         Machine-readable manifest and checksum files.
-  1.1-beta/      Machine-readable manifest and checksum files.
+  0.1.0/         Historical Product 1.0 manifest and checksum files.
+  1.1/           Current stable manifest and checksum files.
+  1.1-beta/      Historical beta manifest and checksum files.
 ```
 
 ![Plato public docs map](assets/images/plato-public-docs-map.svg)

@@ -166,12 +166,12 @@ Plato prioritizes:
 - audit evidence for trust and debugging;
 - local-first execution for early releases.
 
-Plato does not position the `1.1-beta` release as a broad autonomous worker, a
+Plato does not position the `1.1` release as a broad autonomous worker, a
 multi-agent marketplace, or a source-code distribution.
 
 ## Current Release Status
 
-The public repository maintains two release channels: Stable `0.1.0` and Beta
+The public repository maintains two release channels: Stable `1.1` and Beta
 `1.1-beta`. Both are unsigned and non-notarized macOS Apple Silicon local
 releases.
 

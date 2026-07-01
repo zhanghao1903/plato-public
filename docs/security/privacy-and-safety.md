@@ -2,7 +2,7 @@
 
 This page explains the current public safety posture in plain language.
 
-Plato `1.1-beta` is an early local beta release. It is useful for evaluation,
+Plato `1.1` is an early local release. It is useful for evaluation,
 but it is not a formally audited or app-store-distributed product.
 
 ## Local-First Evaluation
@@ -61,7 +61,7 @@ logs.
 
 ## Current Distribution Caveats
 
-The `1.1-beta` release is:
+The `1.1` release is:
 
 - unsigned;
 - non-notarized;

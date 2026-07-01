@@ -116,7 +116,7 @@ understand both the fix and the evidence.
 
 ## Availability Notes
 
-The current `1.1-beta` public release is an early local beta. Use
+The current `1.1` public release is an early local release. Use
 these examples as product direction and evaluation scenarios. Check
 [Release status](release-status.md) before treating a feature shown in a
 screenshot or example as generally available.

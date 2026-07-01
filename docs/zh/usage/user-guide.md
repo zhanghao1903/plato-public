@@ -95,7 +95,7 @@ ASK 和 confirmation 不一样。confirmation 表示 Plato 知道要做什么，
 - 任务状态和失败原因；
 - 需要理解发生了什么时，查看 Audit Page 证据。
 
-在 `1.1-beta` 通道中，也可以检查 Product 1.1 的基础检查能力：
+在 `1.1` 通道中，也可以检查 Product 1.1 的基础检查能力：
 
 - AI 活动后的 token 用量摘要；
 - workspace inspection 中的 Git 状态、diff 和文件查看；
@@ -121,4 +121,4 @@ workspace inspection 在截图和发布文档中使用公开安全的路径标�
 
 ## 当前版本说明
 
-公开通道是未签名、未公证的 macOS 本地版本。部分截图可能展示产品方向或公开安全的示例流程。具体能力请以 [公开版本](../product/versions.md) 和 [1.1-beta 发布说明](../releases/1.1-beta.md) 为准。
+公开通道是未签名、未公证的 macOS 本地版本。部分截图可能展示产品方向或公开安全的示例流程。具体能力请以 [公开版本](../product/versions.md) 和 [1.1 发布说明](../releases/1.1.md) 为准。

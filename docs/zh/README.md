@@ -18,11 +18,11 @@ Plato 是一个 Task-first 智能工作台。它不是把工作隐藏在长对�
 5. [产品用例](product/use-cases.md)
 6. [隐私与安全](security/privacy-and-safety.md)
 7. [工程亮点](engineering/highlights.md)
-8. [1.1-beta 发布说明](releases/1.1-beta.md)
+8. [1.1 发布说明](releases/1.1.md)
 
 ## 当前发布状态
 
-当前对外维护两个公开通道：Stable `0.1.0` 和 Beta `1.1-beta`。
+当前对外维护两个公开通道：Stable `1.1` 和 Beta `1.1-beta`。
 差异见 [公开版本](product/versions.md)。
 
 重要说明：

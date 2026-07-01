@@ -4,68 +4,66 @@ This repository publishes two public macOS Apple Silicon channels:
 
 | Channel | Current version | Role | Release notes |
 |---|---:|---|---|
-| Stable | `0.1.0` | Conservative public baseline for the task-first product loop. | [0.1.0 notes](../releases/0.1.0.md) |
-| Beta | `1.1-beta` | Latest Product 1.1 inspection foundations. | [1.1-beta notes](../releases/1.1-beta.md) |
+| Stable | `1.1` | Current formal public Product 1.1 release. | [1.1 notes](../releases/1.1.md) |
+| Beta | `1.1-beta` | Earlier Product 1.1 preview retained for comparison. | [1.1-beta notes](../releases/1.1-beta.md) |
+
+The prior Product 1.0 public baseline was `0.1.0`; it remains available from
+GitHub releases for historical comparison.
 
 For a feature-by-feature comparison, see [Public versions](versions.md).
 
-## Latest Beta Release
+## Latest Stable Release
 
 | Field | Value |
 |---|---|
-| Version | `1.1-beta` |
+| Version | `1.1` |
 | Platform | macOS |
 | Architecture | Apple Silicon / `arm64` |
-| Asset | `Plato-1.1-beta-macos-arm64.dmg` |
-| Runtime | Bundled Python sidecar candidate |
+| Asset | `Plato-1.1-macos-arm64.dmg` |
+| Runtime | Bundled Python sidecar |
 | Signed | No |
 | Notarized | No |
+| Source commit | `8a766a96d7e3a78a60583318f6231475d312043e` |
 
 Download:
 
-- [Plato-1.1-beta-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1-beta/Plato-1.1-beta-macos-arm64.dmg)
+- [Plato-1.1-macos-arm64.dmg](https://github.com/zhanghao1903/plato-public/releases/download/v1.1/Plato-1.1-macos-arm64.dmg)
 
 Checksum:
 
 ```text
-bdf1d719546c84569dae4c6610ed9a609acb77c971d00a938ff59c6510caa6e1  Plato-1.1-beta-macos-arm64.dmg
+fd9588592fcc8f0f04322dac8b84038bc3ebd713bdf68cf5a5b1cd4fd76e809e  Plato-1.1-macos-arm64.dmg
 ```
 
 Metadata:
 
-- [manifest.json](../../releases/1.1-beta/manifest.json)
-- [SHA256SUMS](../../releases/1.1-beta/SHA256SUMS)
-- [Human-readable release notes](../releases/1.1-beta.md)
+- [manifest.json](../../releases/1.1/manifest.json)
+- [SHA256SUMS](../../releases/1.1/SHA256SUMS)
+- [Human-readable release notes](../releases/1.1.md)
 
-## What The Beta Release Is
+## What The Stable 1.1 Release Is
 
-The beta channel is for early evaluation of the Plato desktop experience and
-the Product 1.1 inspection foundations.
+Stable `1.1` is the formal public release of the Product 1.1 local desktop
+experience. Compared with the Product 1.0 public baseline `0.1.0`, it adds:
 
-It is intended to make the product loop visible:
+- Runtime Input Router and one routed input surface;
+- durable Conversation / Activity history;
+- read-only inquiry for no-effect questions;
+- ASK and confirmation routing through Conversation;
+- command-backed plan/task revision behavior;
+- archived Plan access;
+- token usage analytics;
+- precision file tools;
+- workspace inspection for git status, changed files, file viewer, and diff
+  entry points;
+- frontend interaction runtime improvements for submit responsiveness, focus,
+  route return, overlay return, and scroll stability.
 
-```text
-goal -> task structure -> execution -> result -> audit
-```
+## Beta Channel
 
-Compared with stable `0.1.0`, beta `1.1-beta` adds:
-
-- [token usage analytics](../releases/1.1-beta.md#token-usage-analytics) for
-  local sessions and workspace summaries;
-- [precision file tool foundations](../releases/1.1-beta.md#precision-file-tools)
-  for line-range reads, search, guarded edits, append operations, and
-  changed-line evidence;
-- [workspace inspection](../architecture/trust-and-audit.md#workspace-inspection-direction)
-  for git status, structured diffs, and file viewer paths.
-
-## Stable Baseline
-
-The stable channel is currently `0.1.0`. It is the conservative public baseline
-for reviewing Plato's task-first model, visible task plan, ASK direction, Main
-Page control surface, and Audit Page trust surface.
-
-Stable is still an unsigned, non-notarized local release. It is stable relative
-to the public beta channel, not a signed app-store-quality distribution.
+The beta channel currently points to `1.1-beta`. It is retained for reviewers
+who need to compare the earlier Product 1.1 preview. New users should start with
+Stable `1.1`.
 
 ## What Public Releases Are Not
 
@@ -74,8 +72,8 @@ The public channels are not:
 - signed or notarized for normal macOS distribution;
 - a source-code mirror;
 - a public marketplace for agents or skills;
-- a promise that every roadmap item in the docs is available in `1.1-beta`.
-- a signed, notarized, auto-updating, or marketplace-ready release.
+- a signed, notarized, auto-updating, or app-store-quality release;
+- a guarantee that every roadmap item in the docs is available in every build.
 
 ## Opening On macOS
 

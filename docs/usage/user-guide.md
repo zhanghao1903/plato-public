@@ -110,7 +110,7 @@ Check:
 - task status and failure details;
 - audit evidence when you need to know what happened and why.
 
-In the `1.1-beta` channel, also check the Product 1.1 inspection foundations:
+In the `1.1` channel, also check the Product 1.1 inspection foundations:
 
 - token usage summaries after AI-backed activity;
 - workspace inspection for git status, diffs, and file viewing;
