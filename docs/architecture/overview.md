@@ -6,6 +6,12 @@ Plato is the product surface. A local runtime handles task execution behind it.
 
 ![Plato architecture overview](../../assets/images/plato-architecture-overview.svg)
 
+For a richer public presentation, open the standalone
+[Product 1.1 architecture visualization](../../assets/visuals/plato-architecture-overview.html).
+To inspect the execution data path specifically, open the
+[Agent Loop data-flow visualization](../../assets/visuals/plato-agent-loop.html).
+The source data files live next to the HTML pages under `assets/visuals/`.
+
 ## Architecture Shape
 
 Plato separates intent, execution, and trust into distinct areas.

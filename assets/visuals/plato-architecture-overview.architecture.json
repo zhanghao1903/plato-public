@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Plato Product 1.1 Architecture",
+    "subtitle": "Router-first input, fixed execution lane, durable activity and audit evidence",
+    "viewBox": [1340, 860],
+    "output": "plato-architecture-overview.html"
+  },
+  "components": [
+    {
+      "id": "user",
+      "type": "external",
+      "label": "User",
+      "sublabel": "goal / question / answer",
+      "pos": [50, 310],
+      "size": [140, 72]
+    },
+    {
+      "id": "renderer",
+      "type": "frontend",
+      "label": "Main Page UI",
+      "sublabel": "conversation + details",
+      "pos": [250, 300],
+      "size": [160, 92]
+    },
+    {
+      "id": "sidecar",
+      "type": "backend",
+      "label": "Electron Sidecar",
+      "sublabel": "local FastAPI runtime",
+      "pos": [250, 455],
+      "size": [160, 82]
+    },
+    {
+      "id": "router",
+      "type": "backend",
+      "label": "Input Router",
+      "sublabel": "classify + dispatch",
+      "pos": [485, 275],
+      "size": [160, 82]
+    },
+    {
+      "id": "readonly",
+      "type": "cloud",
+      "label": "Read-only Inquiry",
+      "sublabel": "answer without mutation",
+      "pos": [725, 150],
+      "size": [170, 78]
+    },
+    {
+      "id": "contract",
+      "type": "backend",
+      "label": "Contract Commands",
+      "sublabel": "ASK / guidance / handoff",
+      "pos": [725, 275],
+      "size": [182, 82]
+    },
+    {
+      "id": "authoring",
+      "type": "backend",
+      "label": "Authoring Domain",
+      "sublabel": "RawTask to DraftTree",
+      "pos": [725, 405],
+      "size": [182, 82]
+    },
+    {
+      "id": "publisher",
+      "type": "messagebus",
+      "label": "Task Publisher",
+      "sublabel": "publish immutable work",
+      "pos": [965, 405],
+      "size": [160, 78]
+    },
+    {
+      "id": "taskbus",
+      "type": "messagebus",
+      "label": "TaskBus",
+      "sublabel": "single writer lane",
+      "pos": [965, 555],
+      "size": [160, 78]
+    },
+    {
+      "id": "agent",
+      "type": "backend",
+      "label": "Default Agent",
+      "sublabel": "task-scoped execution",
+      "pos": [725, 555],
+      "size": [182, 82]
+    },
+    {
+      "id": "workspace",
+      "type": "database",
+      "label": "Workspace Root",
+      "sublabel": "files + process effects",
+      "pos": [485, 555],
+      "size": [170, 82]
+    },
+    {
+      "id": "activity",
+      "type": "database",
+      "label": "Conversation",
+      "sublabel": "durable activity replay",
+      "pos": [485, 60],
+      "size": [170, 78]
+    },
+    {
+      "id": "audit",
+      "type": "security",
+      "label": "Audit Evidence",
+      "sublabel": "diagnostics + inspection",
+      "pos": [725, 60],
+      "size": [170, 78]
+    },
+    {
+      "id": "settings",
+      "type": "security",
+      "label": "LLM Roles",
+      "sublabel": "provider config",
+      "pos": [485, 705],
+      "size": [170, 74]
+    },
+    {
+      "id": "web",
+      "type": "external",
+      "label": "Web Retrieval",
+      "sublabel": "search / fetch evidence",
+      "pos": [965, 705],
+      "size": [170, 74]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Product control plane",
+      "wraps": ["renderer", "sidecar", "router", "readonly", "contract", "authoring"],
+      "pad": 28
+    },
+    {
+      "kind": "region",
+      "label": "Execution plane",
+      "wraps": ["publisher", "taskbus", "agent", "workspace", "web"],
+      "pad": 28
+    },
+    {
+      "kind": "security-group",
+      "label": "Trust plane",
+      "wraps": ["activity", "audit"],
+      "pad": 26
+    }
+  ],
+  "connections": [
+    {
+      "from": "user",
+      "to": "renderer",
+      "label": "input",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight"
+    },
+    {
+      "from": "renderer",
+      "to": "sidecar",
+      "label": "local API",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelAt": [330, 428],
+      "route": "straight"
+    },
+    {
+      "from": "renderer",
+      "to": "router",
+      "label": "runtime input",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight",
+      "labelDy": -22
+    },
+    {
+      "from": "sidecar",
+      "to": "router",
+      "label": "service call",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "route": "orthogonal-h",
+      "labelDx": -24,
+      "labelDy": 18
+    },
+    {
+      "from": "router",
+      "to": "readonly",
+      "label": "question",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "orthogonal-v",
+      "labelDx": -12,
+      "labelDy": -16
+    },
+    {
+      "from": "router",
+      "to": "contract",
+      "label": "mutation intent",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight",
+      "labelDy": -18
+    },
+    {
+      "from": "contract",
+      "to": "authoring",
+      "label": "draft / facts",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight",
+      "labelAt": [880, 382]
+    },
+    {
+      "from": "authoring",
+      "to": "publisher",
+      "label": "publish",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight"
+    },
+    {
+      "from": "publisher",
+      "to": "taskbus",
+      "label": "PublishedTask",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight",
+      "labelAt": [1110, 520]
+    },
+    {
+      "from": "taskbus",
+      "to": "agent",
+      "label": "claim task",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "right",
+      "route": "straight"
+    },
+    {
+      "from": "agent",
+      "to": "workspace",
+      "label": "tools / files",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "right",
+      "route": "straight"
+    },
+    {
+      "from": "agent",
+      "to": "taskbus",
+      "label": "result / ask",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight",
+      "labelAt": [940, 665]
+    },
+    {
+      "from": "readonly",
+      "to": "web",
+      "label": "bounded evidence",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "top",
+      "route": "orthogonal-v",
+      "labelAt": [1030, 320]
+    },
+    {
+      "from": "agent",
+      "to": "web",
+      "label": "retrieval tools",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "orthogonal-v",
+      "labelDy": 20
+    },
+    {
+      "from": "settings",
+      "to": "router",
+      "label": "router LLM",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "route": "straight",
+      "labelDx": -55
+    },
+    {
+      "from": "settings",
+      "to": "agent",
+      "label": "agent LLM",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "route": "orthogonal-h",
+      "labelDy": 18
+    },
+    {
+      "from": "router",
+      "to": "activity",
+      "label": "decision log",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "route": "straight",
+      "labelDx": -40
+    },
+    {
+      "from": "taskbus",
+      "to": "audit",
+      "label": "execution evidence",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "right",
+      "route": "orthogonal-v",
+      "labelDx": 20
+    },
+    {
+      "from": "workspace",
+      "to": "audit",
+      "label": "inspection",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "route": "orthogonal-v",
+      "labelAt": [610, 515]
+    }
+  ],
+  "cards": [
+    {
+      "title": "Input discipline",
+      "accent": "cyan",
+      "items": [
+        "Main Page input always reaches the Runtime Input Router first.",
+        "The router chooses read-only inquiry, contract command, ASK resolution, confirmation, or execution handoff.",
+        "User language is durable conversation content before it becomes product or execution state."
+      ]
+    },
+    {
+      "title": "Execution boundary",
+      "accent": "orange",
+      "items": [
+        "PublishedTask is the execution authority.",
+        "TaskBus keeps one active writer lane for workspace effects.",
+        "Product 1.1 still uses a fixed Default Agent execution route."
+      ]
+    },
+    {
+      "title": "Trust and evidence",
+      "accent": "rose",
+      "items": [
+        "Conversation, Activity, Audit, Diagnostics, and Workspace Inspection are first-class projections.",
+        "Read-only answers and execution results are replayable and inspectable.",
+        "LLM role configuration stays backend-only for now, preserving product simplicity."
+      ]
+    }
+  ]
+}

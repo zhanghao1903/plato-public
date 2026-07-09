@@ -136,6 +136,8 @@ thesis.
 
 ## For Reviewers
 
+- [Architecture visualization](assets/visuals/plato-architecture-overview.html): standalone Product 1.1 architecture map.
+- [Agent Loop visualization](assets/visuals/plato-agent-loop.html): data-flow map for execution inputs, loop work, and outputs.
 - [Engineering highlights](docs/engineering/highlights.md): what this project
   demonstrates technically.
 - [Architecture overview](docs/architecture/overview.md): public system shape.
@@ -196,6 +198,7 @@ docs/
 assets/
   images/        Product and architecture diagrams.
   screenshots/   Public-safe UI screenshots.
+  visuals/       Standalone HTML visualizations and source JSON.
 releases/
   0.1.0/         Historical Product 1.0 manifest and checksum files.
   1.1/           Current stable manifest and checksum files.

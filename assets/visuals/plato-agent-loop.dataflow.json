@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Plato Agent Loop Data Flow",
+    "subtitle": "What enters the loop, what the loop does, and what comes out",
+    "viewBox": [1120, 800],
+    "output": "plato-agent-loop.html"
+  },
+  "stages": [
+    { "label": "Authority" },
+    { "label": "Context" },
+    { "label": "Loop Core" },
+    { "label": "Tools" },
+    { "label": "Outputs" }
+  ],
+  "nodes": [
+    {
+      "id": "taskbus",
+      "type": "messagebus",
+      "label": "TaskBus Claim",
+      "sublabel": "PublishedTask authority",
+      "stage": 0,
+      "row": 0,
+      "width": 132,
+      "tag": "contract"
+    },
+    {
+      "id": "workspace",
+      "type": "database",
+      "label": "Workspace Facts",
+      "sublabel": "files, events, ASK",
+      "stage": 0,
+      "row": 2,
+      "width": 132,
+      "tag": "state"
+    },
+    {
+      "id": "controls",
+      "type": "security",
+      "label": "Control Facts",
+      "sublabel": "policy + interrupt",
+      "stage": 0,
+      "row": 4,
+      "width": 132,
+      "tag": "guard"
+    },
+    {
+      "id": "context_manager",
+      "type": "backend",
+      "label": "Context Manager",
+      "sublabel": "bounded execution view",
+      "stage": 1,
+      "row": 1,
+      "width": 142,
+      "tag": "render"
+    },
+    {
+      "id": "tool_schema",
+      "type": "security",
+      "label": "Tool Schema",
+      "sublabel": "allowed actions",
+      "stage": 1,
+      "row": 3,
+      "width": 132,
+      "tag": "policy"
+    },
+    {
+      "id": "llm_step",
+      "type": "cloud",
+      "label": "LLM Step",
+      "sublabel": "reason + choose",
+      "stage": 2,
+      "row": 0,
+      "width": 126,
+      "tag": "chat"
+    },
+    {
+      "id": "parser",
+      "type": "backend",
+      "label": "Tool Parser",
+      "sublabel": "tool_call to action",
+      "stage": 2,
+      "row": 2,
+      "width": 126,
+      "tag": "action"
+    },
+    {
+      "id": "transcript",
+      "type": "messagebus",
+      "label": "Loop Transcript",
+      "sublabel": "assistant + tool msgs",
+      "stage": 2,
+      "row": 4,
+      "width": 138,
+      "tag": "next turn"
+    },
+    {
+      "id": "gate",
+      "type": "security",
+      "label": "Autonomy Gate",
+      "sublabel": "proceed / defer / skip",
+      "stage": 3,
+      "row": 1,
+      "width": 138,
+      "tag": "risk"
+    },
+    {
+      "id": "runtime",
+      "type": "backend",
+      "label": "Runtime Tools",
+      "sublabel": "files, shell, web",
+      "stage": 3,
+      "row": 3,
+      "width": 132,
+      "tag": "execute"
+    },
+    {
+      "id": "audit",
+      "type": "database",
+      "label": "Event / Audit",
+      "sublabel": "actions + observations",
+      "stage": 4,
+      "row": 0,
+      "width": 132,
+      "tag": "evidence"
+    },
+    {
+      "id": "workspace_out",
+      "type": "database",
+      "label": "Workspace Effect",
+      "sublabel": "file diff / command",
+      "stage": 4,
+      "row": 1,
+      "width": 136,
+      "tag": "mutation"
+    },
+    {
+      "id": "ask_out",
+      "type": "security",
+      "label": "ASK / Confirm",
+      "sublabel": "waiting for user",
+      "stage": 4,
+      "row": 2,
+      "width": 132,
+      "tag": "block"
+    },
+    {
+      "id": "task_outcome",
+      "type": "messagebus",
+      "label": "Task Outcome",
+      "sublabel": "done / failed / wait",
+      "stage": 4,
+      "row": 3,
+      "width": 132,
+      "tag": "TaskBus"
+    },
+    {
+      "id": "ui_result",
+      "type": "frontend",
+      "label": "User Surface",
+      "sublabel": "activity + result",
+      "stage": 4,
+      "row": 4,
+      "width": 132,
+      "tag": "visible"
+    }
+  ],
+  "flows": [
+    {
+      "from": "taskbus",
+      "to": "context_manager",
+      "label": "task contract",
+      "classification": "intent, instructions, criteria",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[190, 157], [190, 242]],
+      "labelAt": [235, 210]
+    },
+    {
+      "from": "workspace",
+      "to": "context_manager",
+      "label": "state facts",
+      "classification": "files, recent events",
+      "variant": "default",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight",
+      "labelAt": [236, 334]
+    },
+    {
+      "from": "controls",
+      "to": "context_manager",
+      "label": "control facts",
+      "classification": "ASK, interrupt, policy",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "via": [[194, 615], [300, 615], [300, 300]],
+      "labelAt": [244, 598]
+    },
+    {
+      "from": "context_manager",
+      "to": "llm_step",
+      "label": "rendered input",
+      "classification": "bounded LLM messages",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[425, 242], [425, 157]],
+      "labelAt": [450, 198]
+    },
+    {
+      "from": "tool_schema",
+      "to": "llm_step",
+      "label": "tool list",
+      "classification": "schemas + finish tool",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "via": [[420, 470], [520, 470], [520, 186]],
+      "labelAt": [456, 452]
+    },
+    {
+      "from": "transcript",
+      "to": "llm_step",
+      "label": "loop memory",
+      "classification": "prior observations",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "route": "straight",
+      "labelAt": [612, 500]
+    },
+    {
+      "from": "llm_step",
+      "to": "parser",
+      "label": "tool_calls",
+      "classification": "or final answer",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight",
+      "labelAt": [540, 246]
+    },
+    {
+      "from": "parser",
+      "to": "gate",
+      "label": "action candidate",
+      "classification": "typed BaseAction",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[655, 385], [655, 242]],
+      "labelAt": [684, 312]
+    },
+    {
+      "from": "gate",
+      "to": "runtime",
+      "label": "approved action",
+      "classification": "proceed path",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight",
+      "labelAt": [745, 355]
+    },
+    {
+      "from": "gate",
+      "to": "ask_out",
+      "label": "defer / ask",
+      "classification": "user decision needed",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[840, 242], [840, 385]],
+      "labelAt": [872, 314]
+    },
+    {
+      "from": "runtime",
+      "to": "transcript",
+      "label": "observation",
+      "classification": "tool message for next turn",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "right",
+      "via": [[700, 520], [655, 520]],
+      "labelAt": [680, 544]
+    },
+    {
+      "from": "runtime",
+      "to": "audit",
+      "label": "event facts",
+      "classification": "action + observation",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[852, 470], [852, 157]],
+      "labelAt": [862, 215]
+    },
+    {
+      "from": "runtime",
+      "to": "workspace_out",
+      "label": "workspace change",
+      "classification": "file / shell effects",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [[860, 470], [860, 242]],
+      "labelAt": [898, 428]
+    },
+    {
+      "from": "runtime",
+      "to": "task_outcome",
+      "label": "finish / error",
+      "classification": "terminal summary",
+      "variant": "default",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "straight",
+      "labelAt": [870, 555]
+    },
+    {
+      "from": "task_outcome",
+      "to": "ui_result",
+      "label": "projection",
+      "classification": "activity + result card",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight",
+      "labelAt": [1035, 552]
+    },
+    {
+      "from": "audit",
+      "to": "ui_result",
+      "label": "inspectable proof",
+      "classification": "audit / diagnostics",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "via": [[1010, 200], [1060, 200], [1060, 585]],
+      "labelAt": [1075, 330]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "What enters the loop",
+      "items": [
+        "TaskBus claim supplies the accepted PublishedTask contract.",
+        "Context Manager turns task, workspace, event, ASK, guidance, and policy facts into bounded LLM messages.",
+        "Tool schemas define what the model may request; they are not hidden superpowers."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "What the loop does",
+      "items": [
+        "Each step calls the LLM, receives tool_calls or a final answer, parses calls into typed actions, and checks control boundaries.",
+        "Runtime tools execute approved actions and return observations.",
+        "Observations are appended back into the transcript so the next LLM step reasons over what actually happened."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "What leaves the loop",
+      "items": [
+        "Workspace effects become file changes, command evidence, or web evidence.",
+        "ASK and confirmation can pause execution instead of letting the Agent guess.",
+        "Event, audit, task outcome, and activity projections make the result inspectable."
+      ]
+    }
+  ]
+}
